@@ -1,0 +1,115 @@
+[ 2018-11-02T00:03:53+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+ERR: 1142:SELECT command denied to user 'niuniu'@'localhost' for table 'jz_options'
+ [ SQL语句 ] : SHOW COLUMNS FROM `jz_options`
+ERR: 1142:SELECT command denied to user 'niuniu'@'localhost' for table 'jz_options'
+ [ SQL语句 ] : SHOW COLUMNS FROM `jz_options`
+
+[ 2018-11-02T23:04:12+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011981s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013929s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+ERR: 1142:SELECT command denied to user 'niuniu'@'localhost' for table 'jz_options'
+ [ SQL语句 ] : SHOW COLUMNS FROM `jz_options`
+ERR: 1142:SELECT command denied to user 'niuniu'@'localhost' for table 'jz_options'
+ [ SQL语句 ] : SHOW COLUMNS FROM `jz_options`
+
+[ 2018-11-02T23:13:39+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-11-02T23:17:03+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-11-02T23:21:28+08:00 ] 192.168.0.106 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001209s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-11-02T23:25:20+08:00 ] 192.168.0.106 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000061s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-11-02T23:26:29+08:00 ] 192.168.0.105 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000240s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-11-02T23:26:33+08:00 ] 192.168.0.105 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000109s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0011s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-11-02T23:29:15+08:00 ] 192.168.0.106 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000065s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'extract' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: token /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 33 行.
+

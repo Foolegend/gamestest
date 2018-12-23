@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <title>金花(房间:{$room.roomid})</title>
+    <meta name="apple-mobile-web-app-title" content="大圣娱乐大厅" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="https://cdn-1255620552.file.myqcloud.com/js/jquery-3.2.1.min.js"></script>
+    <link href="/app/css/dashengflower.css" rel="stylesheet" />
+</head>
+<body>
+<div id="loadings" style="position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;z-index:999;font-size:16px;">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+    <div class="loadings-text">
+        页面加载中
+        <span data-item="1">.</span>
+        <span data-item="2">.</span>
+        <span data-item="3">.</span>
+    </div>
+</div>
+<div id="networkReconnect" style="position: fixed; width:2.88rem; line-height:.2rem; font-size:.1rem; left:.36rem; text-align: center; bottom:45%; background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); color:#fff; display:none; z-index:9999;">
+    您的网络已断开，我们正在尝试重连...
+</div>
+<div class="body">
+    <div class="user-card" data-pos="0" data-item="0" data-click="0">
+        <div class="cardbox hind" data-item="0">
+            <span class="card" data-value="12" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox hind" data-item="1">
+            <span class="card" data-value="9" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox hind" data-item="2">
+            <span class="card" data-value="10" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card" data-pos="1">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card" data-pos="2">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card" data-pos="3">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card" data-pos="4">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card" data-pos="5">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="13" data-color="0"></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="top flex-cont">
+        <div class="left">
+            <img src="https://cdn-1255620552.file.myqcloud.com/images/index/room-card1.png" />
+            <span>0</span>
+        </div>
+        <div class="flex-item" id="jsxx">
+            <span>{$room.js}</span>/<span>{$room.zjs}</span>局
+        </div>
+        <div class="right">
+            <div class="rules-focus">
+                <span class="rules"></span>
+                <span class="tips"></span>
+                <span class="add index"></span>
+            </div>
+        </div>
+    </div>
+    <div class="rules-mask">
+        <div class="content">
+            <div class="niuniu-rules">
+                <div class="rule-text flex-cont">
+                    规则
+                </div>
+                <if condition="$room['df']">
+                <div class="flex-cont" data-pos="1">
+                    <div class="name">
+                        底分：
+                    </div>
+                    <div class="flex-item">{$room['df']}</div>
+                </div>
+                </if>
+                <if condition="$room['cm']">
+                <div class="flex-cont" data-pos="2">
+                    <div class="name">
+                        筹码：
+                    </div>
+                    <div class="flex-item">{$room['cm']}</div>
+                </div>
+                </if>
+                <if condition="$room['cm']">
+                <div class="flex-cont" data-pos="3">
+                    <div class="name">
+                        上限：
+                    </div>
+                    <div class="flex-item">{$room['sx']}</div>
+                </div>
+                </if>
+                <div class="flex-cont" data-pos="4">
+                    <div class="name">
+                        局数：
+                    </div>
+                    <div class="flex-item">{$room['zjs']}局×{$room['fk']}房卡</div>
+                </div>
+                <div class="rule-wfjs flex-cont">
+                    玩法
+                </div>
+                <div class="flex-cont rule-wfjs-value" data-pos="5">
+                    <p>牌型的比较</p>
+                    <p>1.豹子 &gt; 顺金 &gt; 金花 &gt; 顺子 &gt; 对子 &gt; 单张 豹子、金花、对子、单张的比较，按照顺序比点的规则比较大小。</p>
+                    <p>2.牌点从大到小为：A、K、Q、J、10、9、8、7、6、5、4、3、2，各花色不分大小。</p>
+                    <p>3.顺金、顺子按照顺序比点。AKQ&gt;KQJ&gt;…&gt;32A。</p>
+                    <p>4.特殊牌型在普通时比较大小按单张牌型来算。当豹子存在时，特殊牌型 &gt;豹子。</p>
+                    <p>5.同种牌型，对子时比对子的大小，其它牌型比最大的牌张，如最大牌张相同则比第二大的张，以此类推。</p>
+                    <p>6.当两牌型大小完全相同时，主动比牌者负。</p>
+                    <p>7.豹子（炸弹）：三张点相同的牌。例：AAA、222。</p>
+                    <p>8.顺金（同花顺、色托）：花色相同的顺子。例：黑桃456、红桃789。最大的顺金为花色相同的QKA，最小的顺金为花色相同的123。</p>
+                    <p>9.金花（色皮）：花色相同，非顺子。例：黑桃368，方块145。</p>
+                    <p>10.顺子（拖拉机）：花色不同的顺子。例：黑桃5红桃6方块7。最大的顺子为花色不同的QKA，最小的顺子为花色不同的123。</p>
+                    <p>11.对子：两张点数相同的牌。例：223，334。</p>
+                    <p>单张：三张牌不组成任何类型的牌。</p>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+    <div class="bottom">
+        <div class="points">
+            <span>底分：</span><span class="bottom-dizhu">{:ceil($room['df'])}</span>&nbsp;&nbsp;<span>单注上限：</span><span>{$room['sx']}</span>
+            <br />
+            <span class="bottom-jushu">{$room['zjs']}</span>局<span class="bottom-fangka">{$room['fk']}</span>张房卡
+        </div>
+        <div class="music">
+            <img src="https://cdn-1255620552.file.myqcloud.com/images/jinhua/game-music2.png" />
+            <img src="https://cdn-1255620552.file.myqcloud.com/images/jinhua/game-music1.png" />
+        </div>
+        <div class="chat"></div>
+        <div class="chat-list-mask"></div>
+        <div class="chat-list" style="display: none">
+            <ul>
+                <li data-item="0">快点吧，我等到花儿也谢了</li>
+                <li data-item="1">我出去叫人</li>
+                <li data-item="2">你的牌好靓哇</li>
+                <li data-item="3">我当年横扫澳门九条街</li>
+                <li data-item="4">算你牛逼</li>
+                <li data-item="5">别吹牛逼，有本事干到底</li>
+                <li data-item="6">输得裤衩都没了</li>
+                <li data-item="7">我给你们送温暖了</li>
+                <li data-item="8">谢谢老板</li>
+                <li data-item="9">我来啦，让你们久等了</li>
+                <li data-item="10">我出去一下，马上回来，等我哦</li>
+                <li data-item="11">怎么断线了，网络太差了</li>
+                <li data-item="12">搏一搏，单车变摩托</li>
+            </ul>
+        </div>
+    </div>
+    <div class="user-list-bg">
+        <div class="user-bg" data-pos="0">
+            <span>空位</span>
+        </div>
+        <div class="user-bg" data-pos="1">
+            <span>空位</span>
+        </div>
+        <div class="user-bg" data-pos="2">
+            <span>空位</span>
+        </div>
+        <div class="user-bg" data-pos="3">
+            <span>空位</span>
+        </div>
+        <div class="user-bg" data-pos="4">
+            <span>空位</span>
+        </div>
+        <div class="user-bg" data-pos="5">
+            <span>空位</span>
+        </div>
+    </div>
+    <div class="user-list"></div>
+    <div class="prepare-list">
+        <div class="prepare-item" data-pos="0"></div>
+        <div class="prepare-item" data-pos="1"></div>
+        <div class="prepare-item" data-pos="2"></div>
+        <div class="prepare-item" data-pos="3"></div>
+        <div class="prepare-item" data-pos="4"></div>
+        <div class="prepare-item" data-pos="5"></div>
+    </div>
+    <div class="prepare" onclick="zhunbei()">
+        <span>准备</span>
+    </div>
+    <div class="bipai-box">
+        <span data-pos="2" data-click="1">2</span>
+        <span data-pos="4" data-click="1">4</span>
+        <span data-pos="8" data-click="1">8</span>
+        <span data-pos="10" data-click="1">10</span>
+        <span>弃牌</span>
+        <span data-bipai="1">比牌</span>
+        <div>
+            请选择比牌玩家
+        </div>
+    </div>
+    <div class="kanpai-box">
+        <span data-id="0" data-pos="0">已看牌</span>
+        <span data-id="0" data-pos="1">已看牌</span>
+        <span data-id="0" data-pos="2">已看牌</span>
+        <span data-id="0" data-pos="3">已看牌</span>
+        <span data-id="0" data-pos="4">已看牌</span>
+        <span data-id="0" data-pos="5">已看牌</span>
+    </div>
+    <div class="money-box"></div>
+    <div class="money-tips">
+        <span class="money-text">60</span>
+        <span class="money-all"></span>
+    </div>
+    <div class="head-time">
+        <span data-pos="0" data-id="0" class="">60</span>
+        <span data-pos="1" data-id="1" class="">60</span>
+        <span data-pos="2" data-id="2" class="">60</span>
+        <span data-pos="3" data-id="3" class="">60</span>
+        <span data-pos="4" data-id="4" class="">60</span>
+        <span data-pos="5" data-id="5" class="">60</span>
+        <span id="djs" data-pos="6" data-id="6" class="clock">60</span>
+    </div>
+    <div class="box-mask">
+        <div data-pos="1">
+            <div data-first="1"></div>
+            <div data-second="1"></div>
+        </div>
+        <div data-pos="2">
+            <div data-first="1"></div>
+            <div data-second="1"></div>
+        </div>
+        <div data-pos="3">
+            <div data-first="1"></div>
+            <div data-second="1"></div>
+        </div>
+        <div data-pos="4">
+            <div data-first="1"></div>
+            <div data-second="1"></div>
+        </div>
+        <div data-pos="5">
+            <div data-first="1"></div>
+            <div data-second="1"></div>
+        </div>
+    </div>
+    <span class="kanpai-result">顺子</span>
+    <div class="kaipai-box">
+        <span data-pos="0" data-item="0"></span>
+        <span data-pos="1" data-value="1" data-item="0"></span>
+        <span data-pos="2" data-value="1" data-item="0"></span>
+        <span data-pos="3" data-value="1" data-item="0"></span>
+        <span data-pos="4" data-value="1" data-item="0"></span>
+        <span data-pos="5" data-value="1" data-item="0"></span>
+    </div>
+</div>
+<script src="/app/dashengflower/goldFlower.js"></script>
+<script src="/app/js/fastclick.js" type="text/javascript"></script>
+<script src="/app/js/homepage/home.js" type="text/javascript"></script>
+<script type="text/javascript" src="/app/js/base64.js"></script>
+<script src="/app/js/dashengapp.js" type="text/javascript"></script>
+<script src="/app/js/game33.js" type="text/javascript"></script>
+
+<if condition="$room['endtime'] gt 0">
+    <script type="text/javascript">
+        window.isClose = 1;
+    </script>
+    <php>
+        $mapxx=array();
+        $mapxx['uid']=$user['id'];
+        $mapxx['room']=$room['id'];
+
+        if(M('user_room')->where($mapxx)->find()){
+    </php>
+    <script type="text/javascript">
+        var data={};
+        data.id={$room['roomid']};
+        data.zjs={$room['zjs']};
+        data.js={$room['js']};
+        data.time='{$room['time']|date="Y-m-d H:i",###}';
+        data.user={$room['overxx']};
+        data.roomid={$room['roomid']};
+        <php>
+        $overxx=json_decode($room['overxx'],true);
+        foreach($overxx as $key=>$value){
+            $nickname=base64_encode(usernickname($value[id]));
+            echo 'data.user["'.$key.'"]["nickname"]="'.$nickname.'";';
+        }
+        $fangzhu=M('user')->find($room['uid']);
+        </php>
+        data.fangzhu=[];
+        data.fangzhu.nickname='{$fangzhu.nickname}';
+        overroom(data);
+    </script>
+
+    <php>
+        }
+        else{
+    </php>
+    <script type="text/javascript">
+        alert2('房间已关闭', function () {
+            wx.closeWindow();
+        });
+    </script>
+    <php>
+        }
+    </php>
+</if>
+
+<script type="text/javascript">
+    function joinTips(d) {
+        var code = "<div class=\"window-masks user-join\" id=\"joinUser\">\n" +
+            "    <div class=\"border-opacity\">\n" +
+            "        <div class=\"container\">\n" +
+            "            <i class=\"mask-icon mask-top\"></i>\n" +
+            "            <i class=\"mask-icon mask-right\"></i>\n" +
+            "            <i class=\"mask-icon mask-bottom\"></i>\n" +
+            "            <i class=\"mask-icon mask-left\"></i>\n" +
+            "            <div class=\"user-id\">\n" +
+            "                ID："+d.user_id+"\n" +
+            "            </div>\n" +
+            "            <div class=\"main\">\n" +
+            "                <div class=\"rules\">\n" +
+            "                    <p>模式："+d.mode+"</p>\n" +
+            "                    <p>底分："+d.df+"</p>\n" +
+            "                    <p>筹码："+d.cm+"</p>\n";
+        if(d.px) {
+            code +="         <p>牌型："+d.px+"</p>\n";
+        }
+        if(d.js) {
+            code +="         <p>局数："+d.js+" </p>\n";
+        }
+
+        code += "         </div>\n" +
+            "                <div class=\"user-list\">\n";
+        for(var k in d.users){
+            code += "           <div class=\"join-user-info\">\n" +
+                "                        <img src=\""+d.users[k]['img']+"\" alt=\"\" />\n" +
+                "                        <span>"+d.users[k]['nickname']+"</span>\n" +
+                "                    </div>\n";
+        }
+        code += "    </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"button\">\n" +
+            "                <div class=\"return\" onclick=\"location.href='/portal/index/dasheng'\">\n" +
+            "                    创建房间\n" +
+            "                </div>\n" +
+            "                <div class=\"join-game\" id=\"joinGame\" onclick=\"joinroom()\">\n" +
+            "                    加入游戏\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "</div>";
+        document.getElementsByTagName('body')[0].insertAdjacentHTML("beforeend", code);
+    }
+
+    function friendToApply(d) {
+        var code = '<div class="request-member-mask">';
+        code += '<div class="requst-member">';
+        code += '<div class="text">你不是该房主的好友,无法加入房间；</div>';
+        code += '<div class="room-user flex-cont">';
+        code += '<div class="room-user-path"><img id="roomUserPath" src="' + d.room_owner.path + '"></div>';
+        code += '<div class="room-user-name" id="roomUserName">' + d.room_owner.nickname + '</div>';
+        code += '</div>';
+        code += '<div class="text">是否申请成为好友？</div>';
+        code += '<div class="button" id="button">';
+        code += '<div class="request-btn" id="requestBtn">确定</div>';
+        code += '</div>';
+        code += '</div>';
+        code += '</div>';
+        document.getElementsByTagName('body')[0].insertAdjacentHTML("beforeend", code);
+        if(d.is_apply && d.is_apply['id']) {
+            document.getElementById('button').innerHTML = '<div class="request-btn request-btn2">申请中</div>';
+        } else {
+            document.getElementById('requestBtn').onclick = function() {
+                document.getElementById('button').innerHTML = '<div class="request-btn request-btn2">申请中</div>';
+                $.post('/portal/dasheng/firendapply', {'id':d.room_owner.id}, function (data) {
+
+                }, "json");
+            }
+        }
+    }
+
+    function over() {}
+    function joinroom(){
+        $("#joinUser").remove();
+        token='{$token}';
+        room='{$room.id}';
+        var dkxx='{$room.dk}';
+        load('show');
+        if(dkxx){
+            connect(dkxx);
+        }
+        else{
+            load('hide');
+            prompt('服务器没开启,请稍后再试');
+            setTimeout("$('body').hide()",3000);
+        }
+    }
+</script>
+<script>
+    const DOMAIN = 'dasheng.shjggroup.com';
+    const API_DOMAIN = 'dashengzhongyuapi.lfzgame.com';
+    const WS_DOMAIN = 'dashengzhongyuws.lfzgame.com';
+    const JUMP_DOMAIN = 'dasheng.shjggroup.com';
+    const CDN_DOMAIN = 'https://cdn-1255620552.file.myqcloud.com/';
+    const USE_QRCODE = 0;
+    const IS_SSL = 1;
+    const WEB_TITLE = '大圣娱乐大厅';
+    var user = {
+        "id": "<?php echo $user['id']; ?>",
+        "wechat_id": "19",
+        "nickname": "<?php echo $user['nickname']; ?>",
+        "sex": "<?php echo $user['sex']; ?>",
+        "citys": "Chongqing,Shapingba",
+        "path": "<?php echo $user['img']; ?>",
+        "room_cards": "<?php echo $user['fk']; ?>"
+    };
+    wx.onload = function() {
+        win.version = '2.0.0';
+        win.app = 0;
+        win.sign = 'dashengzhongyu';
+        win.token = 'bwuU24tDitViyM6aA982XN4mduv6o2lX521dU6Ub';
+        notice.data = '';
+        sound.source.gold = "https://cdn-1255620552.file.myqcloud.com/music/public/gold.mp3";
+        sound.source.sound_1_0 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_0.mp3";
+        sound.source.sound_1_1 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_1.mp3";
+        sound.source.sound_1_10 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_10.mp3";
+        sound.source.sound_1_11 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_11.mp3";
+        sound.source.sound_1_12 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_12.mp3";
+        sound.source.sound_1_2 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_2.mp3";
+        sound.source.sound_1_3 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_3.mp3";
+        sound.source.sound_1_4 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_4.mp3";
+        sound.source.sound_1_5 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_5.mp3";
+        sound.source.sound_1_6 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_6.mp3";
+        sound.source.sound_1_7 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_7.mp3";
+        sound.source.sound_1_8 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_8.mp3";
+        sound.source.sound_1_9 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_9.mp3";
+        sound.source.sound_2_0 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_0.mp3";
+        sound.source.sound_2_1 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_1.mp3";
+        sound.source.sound_2_10 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_10.mp3";
+        sound.source.sound_2_11 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_11.mp3";
+        sound.source.sound_2_12 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_12.mp3";
+        sound.source.sound_2_2 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_2.mp3";
+        sound.source.sound_2_3 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_3.mp3";
+        sound.source.sound_2_4 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_4.mp3";
+        sound.source.sound_2_5 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_5.mp3";
+        sound.source.sound_2_6 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_6.mp3";
+        sound.source.sound_2_7 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_7.mp3";
+        sound.source.sound_2_8 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_8.mp3";
+        sound.source.sound_2_9 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_9.mp3";
+        sound.source.bgm = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/bgm.mp3";
+        sound.source.sound_101 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_101.mp3";
+        sound.source.sound_102 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_102.mp3";
+        sound.source.sound_1_100 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1_100.mp3";
+        sound.source.sound_1_98 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1_98.mp3";
+        sound.source.sound_1_99 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1_99.mp3";
+        sound.source.sound_1x10 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x10.mp3";
+        sound.source.sound_1x16 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x16.mp3";
+        sound.source.sound_1x2 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x2.mp3";
+        sound.source.sound_1x20 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x20.mp3";
+        sound.source.sound_1x4 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x4.mp3";
+        sound.source.sound_1x40 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x40.mp3";
+        sound.source.sound_1x5 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x5.mp3";
+        sound.source.sound_1x8 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_1x8.mp3";
+        sound.source.sound_2_100 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2_100.mp3";
+        sound.source.sound_2_98 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2_98.mp3";
+        sound.source.sound_2_99 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2_99.mp3";
+        sound.source.sound_2x10 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x10.mp3";
+        sound.source.sound_2x16 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x16.mp3";
+        sound.source.sound_2x2 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x2.mp3";
+        sound.source.sound_2x20 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x20.mp3";
+        sound.source.sound_2x4 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x4.mp3";
+        sound.source.sound_2x40 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x40.mp3";
+        sound.source.sound_2x5 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x5.mp3";
+        sound.source.sound_2x8 = "https://cdn-1255620552.file.myqcloud.com/music/goldFlower/sound_2x8.mp3";
+        win.load();
+        win.ready();
+    };
+    wx.config({
+        appId: 'wxd8803917b97c1289',
+        timestamp: '1517563722',
+        nonceStr: '5a726f01ec356f1153d75c26d6f7cb20',
+        signature: 'cdff2823b696d4444974f9bbd5b7b93f1609ef69',
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'getLocation', 'hideOptionMenu']
+    });
+    wx.ready(function() {
+        if (wx.readed && wx.readed == 1) return;
+        wx.readed = 1;
+        if (wx.loaded == 1) wx.onload();
+    });
+    window.onload = function() {
+        if(window.isClose) return;
+        wx.loaded = 1;
+        win.load();
+
+        var join_tips = "<?php echo (count($room['userlist']) > 0 && $user['id'] != $fzuser['id'] && !isset($room['userlist'][$user['id']])); ?>";
+        var is_join = '<?php echo !empty($mayuser[$user["id"]]); ?>';
+        var is_apply = JSON.parse('<?php echo json_encode($is_apply); ?>');
+        if(!is_join) {
+            friendToApply({
+                "room_owner": {
+                    "id": "<?php echo $fzuser['id']; ?>",
+                    "nickname": "<?php echo $fzuser['nickname']; ?>",
+                    "path": "<?php echo $fzuser['img']; ?>"
+                },
+                "is_apply" : is_apply
+            });
+        } else if(join_tips) {
+            joinTips({
+                "user_id" : "<?php echo $user['id']; ?>",
+                "nickname" : "<?php echo $user['nickname']; ?>",
+                "path" : "<?php echo $user['img']; ?>",
+                "mode" : "<?php echo $room['wfname']; ?>",
+                "df" : "<?php echo $room['df']; ?>",
+                "cm" : "<?php echo $room['cm']; ?>",
+                "px" : "<?php echo implode(' ', $room['px']); ?>",
+                "js" : "<?php echo $room['zjs'],'局X',$room['fk'],'房卡'; ?>",
+                "users" : JSON.parse('<?php echo json_encode($userlist); ?>')
+            });
+        } else {
+            joinroom();
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <title>大圣娱乐大厅</title>
+    <meta name="apple-mobile-web-app-title" content="大圣娱乐大厅" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+    </script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="//cdn.lfzgame.com/js/pixi.min.js"></script>
+    <link href="/app/css/dasheng28.css" rel="stylesheet" />
+</head>
+<body>
+<div id="loadings" style="position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;z-index:999;font-size:16px;">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+    <div class="loadings-text">
+        页面加载中
+        <span data-item="1">.</span>
+        <span data-item="2">.</span>
+        <span data-item="3">.</span>
+    </div>
+</div>
+<div id="networkReconnect" style="position: fixed; width:2.88rem; line-height:.2rem; font-size:.1rem; left:.36rem; text-align: center; bottom:45%; background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); color:#fff; display:none; z-index:9999;">
+    您的网络已断开，我们正在尝试重连...
+</div>
+
+<script> DEBUG = 1;</script>
+<script src="/app/dasheng28/base.js"></script>
+<script src="/app/dasheng28/game.js"></script>
+<script src="/app/dasheng28/config.js"></script>
+<script>
+    const DOMAIN = 'dasheng.shjggroup.com';
+    const API_DOMAIN = 'dashengzhongyuapi.lfzgame.com';
+    const WS_DOMAIN = 'dashengzhongyuws.lfzgame.com';
+    const JUMP_DOMAIN = 'dasheng.shjggroup.com';
+    const CDN_DOMAIN = 'https://cdn-1255620552.file.myqcloud.com/';
+    const USE_QRCODE = 0;
+    const IS_SSL = 1;
+    const WEB_TITLE = '大圣娱乐大厅';
+    var user = {
+        "id":"<?php echo $user['id']; ?>",
+        "wechat_id":"19",
+        "nickname":"<?php echo $user['nickname']; ?>",
+        "sex":"<?php echo $user['sex']; ?>",
+        "citys":"Chongqing,Shapingba",
+        "path":"<?php echo $user['img']; ?>",
+        "room_cards":"<?php echo $user['fk']; ?>"
+    };
+    sound.source.gold = "https://cdn-1255620552.file.myqcloud.com/music/public/gold.mp3";
+    sound.source.sound_1_0 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_0.mp3";
+    sound.source.sound_1_1 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_1.mp3";
+    sound.source.sound_1_10 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_10.mp3";
+    sound.source.sound_1_11 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_11.mp3";
+    sound.source.sound_1_12 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_12.mp3";
+    sound.source.sound_1_2 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_2.mp3";
+    sound.source.sound_1_3 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_3.mp3";
+    sound.source.sound_1_4 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_4.mp3";
+    sound.source.sound_1_5 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_5.mp3";
+    sound.source.sound_1_6 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_6.mp3";
+    sound.source.sound_1_7 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_7.mp3";
+    sound.source.sound_1_8 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_8.mp3";
+    sound.source.sound_1_9 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_9.mp3";
+    sound.source.sound_2_0 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_0.mp3";
+    sound.source.sound_2_1 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_1.mp3";
+    sound.source.sound_2_10 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_10.mp3";
+    sound.source.sound_2_11 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_11.mp3";
+    sound.source.sound_2_12 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_12.mp3";
+    sound.source.sound_2_2 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_2.mp3";
+    sound.source.sound_2_3 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_3.mp3";
+    sound.source.sound_2_4 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_4.mp3";
+    sound.source.sound_2_5 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_5.mp3";
+    sound.source.sound_2_6 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_6.mp3";
+    sound.source.sound_2_7 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_7.mp3";
+    sound.source.sound_2_8 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_8.mp3";
+    sound.source.sound_2_9 = "https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_9.mp3";
+    sound.source.bgm = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/bgm.mp3";
+    sound.source.sound_1_10 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_1_10.mp3";
+    sound.source.sound_1_100 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_1_100.mp3";
+    sound.source.sound_1_101 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_1_101.mp3";
+    sound.source.sound_1_102 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_1_102.mp3";
+    sound.source.sound_1_20 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_1_20.mp3";
+    sound.source.sound_1_50 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_1_50.mp3";
+    sound.source.sound_2_10 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_2_10.mp3";
+    sound.source.sound_2_100 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_2_100.mp3";
+    sound.source.sound_2_101 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_2_101.mp3";
+    sound.source.sound_2_102 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_2_102.mp3";
+    sound.source.sound_2_20 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_2_20.mp3";
+    sound.source.sound_2_50 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_2_50.mp3";
+    sound.source.sound_3_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_0.mp3";
+    sound.source.sound_3_1 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_1.mp3";
+    sound.source.sound_3_10 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_10.mp3";
+    sound.source.sound_3_100 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_100.mp3";
+    sound.source.sound_3_11 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_11.mp3";
+    sound.source.sound_3_12 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_12.mp3";
+    sound.source.sound_3_1_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_1_0.mp3";
+    sound.source.sound_3_2 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_2.mp3";
+    sound.source.sound_3_2_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_2_0.mp3";
+    sound.source.sound_3_3 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_3.mp3";
+    sound.source.sound_3_3_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_3_0.mp3";
+    sound.source.sound_3_4 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_4.mp3";
+    sound.source.sound_3_4_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_4_0.mp3";
+    sound.source.sound_3_5 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_5.mp3";
+    sound.source.sound_3_5_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_5_0.mp3";
+    sound.source.sound_3_6 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_6.mp3";
+    sound.source.sound_3_6_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_6_0.mp3";
+    sound.source.sound_3_7 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_7.mp3";
+    sound.source.sound_3_7_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_7_0.mp3";
+    sound.source.sound_3_8 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_8.mp3";
+    sound.source.sound_3_8_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_8_0.mp3";
+    sound.source.sound_3_9 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_9.mp3";
+    sound.source.sound_3_99 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_99.mp3";
+    sound.source.sound_3_9_0 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_3_9_0.mp3";
+    sound.source.sound_4_1 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_4_1.mp3";
+    sound.source.sound_4_2 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_4_2.mp3";
+    sound.source.sound_4_3 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_4_3.mp3";
+    sound.source.sound_4_4 = "https://cdn-1255620552.file.myqcloud.com/music/pushBobbin/sound_4_4.mp3";
+    window.onload = function(){
+        win.version = '2.0.0';
+        win.app = 0;
+        win.sign = 'dashengzhongyu';
+        win.token = '39WI7U60Lz2B8EcbfNcVV1yokzfowkYEuiff8AHh';
+        notice.data = '';
+        //win.load();
+    }
+    wx.config({
+        appId: 'wxd8803917b97c1289', // 必填，公众号的唯一标识
+        timestamp: '1516856356', // 必填，生成签名的时间戳
+        nonceStr: '0930692f7b57ce01c97cffc7cfe9549e', // 必填，生成签名的随机串
+        signature: 'a92f8cecd410c38762849d542f892f0cf968b4f1',// 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'getLocation', 'hideOptionMenu']
+    });
+    wx.ready(function(){
+        if(win.readed == 1)return;
+        win.readed = 1;
+        win.ready();
+    });
+    wx.error(function(res){
+        //$.alert('微信API获取失败！');
+    });
+</script>
+
+<script src="/app/js/fastclick.js" type="text/javascript"></script>
+<script src="/app/dasheng28/home.js" type="text/javascript"></script>
+<script type="text/javascript" src="/app/js/base64.js"></script>
+<script src="/app/dasheng28/app.js"></script>
+<script src="/app/js/game31.js" type="text/javascript"></script>
+<if condition="$room['endtime'] gt 0">
+    <php>
+        $mapxx=array();
+        $mapxx['uid']=$user['id'];
+        $mapxx['room']=$room['id'];
+
+        if(M('user_room')->where($mapxx)->find()){
+    </php>
+    <script type="text/javascript">
+        var data={};
+        data.id={$room['roomid']};
+        data.zjs={$room['zjs']};
+        data.js={$room['js']};
+        data.time='{$room['time']|date="Y-m-d H:i",###}';
+        data.user={$room['overxx']};
+        data.roomid={$room['roomid']};
+        <php>
+        $overxx=json_decode($room['overxx'],true);
+        foreach($overxx as $key=>$value){
+            $nickname=base64_encode(usernickname($value[id]));
+            echo 'data.user["'.$key.'"]["nickname"]="'.$nickname.'";';
+        }
+        $fangzhu=M('user')->find($room['uid']);
+        </php>
+        data.fangzhu=[];
+        data.fangzhu.nickname='{$fangzhu.nickname}';
+        overroom(data);
+    </script>
+
+    <php>
+        exit();
+        }
+        else{
+    </php>
+    <script type="text/javascript">
+        document.title = '温馨提示';
+    </script>
+    <div id="valert2" class="alert">
+        <div class="alertBack" style="opacity: 1;"></div>
+        <div class="mainPart" style="height: 27%;margin-top: -113.39px;">
+            <div class="backImg">
+                <div class="blackImg" style="height: 82%;"></div>
+            </div>
+            <div class="alertText" style="top: 45%;" id="tipmsg">房间已经关闭</div>
+        </div>
+    </div>
+    <php>
+        }
+        exit();
+    </php>
+</if>
+<script type="text/javascript">
+    joinroom();
+    function joinroom(){
+        token='{$token}';
+        room='{$room.id}';
+        var dkxx='{$room.dk}';
+        if(dkxx){
+            connect(dkxx);
+        }
+        else{
+            prompt('服务器没开启,请稍后再试');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+php ./php54n/test.php start -d 1 6487 8002
+php ./php54n/runtime2-game2.php start -d 2 6488 9人牛牛1
+php ./php54n/runtime5-game1.php start -d 5 6489 6人斗牛1
+php ./php54n/runtime6-game5.php start -d 6 6490 炸金花
+php ./php54n/runtime8-game10.php start -d 8 6491 12
+php ./php54n/runtime9-game3.php start -d 9 6492 三公
+php ./php54n/runtime10-game14.php start -d 10 6493 9人牛牛8倍
+php ./php54n/runtime11-game4.php start -d 11 6494 九人三公
+php ./php54n/runtime13-game15.php start -d 13 6495 10人斗牛
+php ./php54n/runtime14-game6.php start -d 14 6496 二八杠
+php ./php54n/runtime17-game16.php start -d 17 6497 九人炸金花
+php ./php54n/runtime18-game17.php start -d 18 6498 	12人吉祥三公
+php ./php54n/runtime23-game27.php start -d 23 6500 五兽9人牌九

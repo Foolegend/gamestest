@@ -1,0 +1,254 @@
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <title>193{$room.id}号九人房间</title> 
+  <link rel="stylesheet" type="text/css" href="css/sangong9-1.0.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/alert-1.1.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/bullshop.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/sangong9.css" /> 
+  <script type="text/javascript" src="js/fastclick.js"></script> 
+  <script type="text/javascript">
+	window.addEventListener('load', function() {
+		FastClick.attach(document.body);
+	}, false);
+  </script> 
+ </head> 
+ <body> 
+  
+
+
+
+
+
+  <div id="app-main" class="main" style="position: relative; width: 100%; margin: 0px auto; background: rgb(255, 255, 255); height:100%;">
+   <div style="position: absolute; background-color: rgba(0, 0, 0, 0.8); width: 100%; height: 7vh; line-height: 7vh; color: white; font-size: 2.5vh; overflow: hidden; z-index: 9998; display: none;">
+    <img src="img/img/alert_icon.png" style="position: absolute; top: 1.5vh; left: 3vw; width: 4vh; height: 4vh;" />
+   </div> 
+
+
+
+
+<!-- /画布 -->
+<img src="/app/bg.png" style="display: none">
+<img src="/app/dyj.png" style="display: none">
+    <div id="overtime" style="display: none">
+    <canvas id="myCanvas" width="696" height="1224" style="display: none"></canvas>
+    </div>
+<if condition="$room['endtime'] gt 0">
+   <php>
+      $mapxx=array();
+      $mapxx['uid']=$user['id'];
+      $mapxx['room']=$room['id'];
+      if(M('user_room')->where($mapxx)->find()){
+  </php>
+    <script type="text/javascript">
+        var data={};
+        data.id={$room['id']};
+        data.zjs={$room['zjs']};
+        data.time='{$room['time']|date="Y-m-d H:i:s",###}';
+        data.user={$room['overxx']};
+        overroom(data);
+    </script>
+
+   <php>
+     }
+     else{
+  </php>
+  <div id="valert2" class="alert">
+   <div class="alertBack"></div> 
+   <div class="mainPart" style="height: 27%;margin-top: -113.39px;">
+    <div class="backImg">
+     <div class="blackImg" style="height: 82%;"></div>
+    </div> 
+    <div class="alertText" style="top: 45%;" id="tipmsg">房间已经关闭</div> 
+     
+     
+   </div>
+  </div>
+  <php>
+      }
+      exit();
+  </php>
+</if>
+
+
+<if condition="$fzuser['sfgl']  && (!$mayuser[$user['id']])">
+<div id="valert2" class="alert">
+   <div class="alertBack"></div> 
+   <div class="mainPart" style="height: 27%;margin-top: -113.39px;">
+    <div class="backImg">
+     <div class="blackImg" style="height: 82%;"></div>
+    </div> 
+    <div class="alertText" style="top: 45%;" id="tipmsg">无法加入，请联系管理员。</div> 
+     
+     
+   </div>
+  </div>
+
+  <php>
+      exit();
+  </php>
+</if>
+
+<if condition="count($room['userlist']) egt 9 && $room['userlist'][$user['id']] neq 1">
+<div id="valert2" class="alert">
+   <div class="alertBack"></div> 
+   <div class="mainPart" style="height: 31%;margin-top: -113.39px;">
+    <div class="backImg">
+     <div class="blackImg" style=" height: 59%;"></div>
+    </div> 
+    <div class="alertText" style="top: 35%;" id="tipmsg">房间人数已满</div> 
+     <div class="buttonRight" style="left: 31.5%;width: 17vh;height: 5.5vh;" onclick="location.href='/'">
+     返回首页
+    </div>
+     
+   </div>
+  </div>
+
+  <php>
+      exit();
+  </php>
+</if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="roomCard">
+    <img src="img/img/roomCard.png" /> 
+    <div class="num">
+     <div  class='sangong-fk'></div> 
+     <div  class='sangong-fk1' id="fknum">
+      {$user['fk']}张
+     </div>
+    </div>
+   </div> 
+
+
+
+
+
+   <img src="img/sangong9/tab_bottom.png" alt="" class="tabBottom" /> 
+   <div class="round" style="position: fixed; color: rgb(255, 255, 255); opacity: 0.7;">
+    0&nbsp;/&nbsp;12&nbsp;局
+   </div> 
+   <img src="img/sangong9/btn_game_home.png" class="return" onclick="opnemm('fangjian_fanhuisy','tishi')"/> 
+   <img src="img/sangong9/note5.png" class="return" style="right: 28.5vh;" onclick="opnemm('fangjian_tishi','tishi')" /> 
+   <img src="img/sangong9/btn_play_rule.png" class="return" style="right: 35vh;" /> 
+   <img src="img/sangong9/btn_game_rule.png" class="bGameRule" style="right: 22vh;"  onclick="opnemm('fangjian_gz','vroomRule')" /> 
+
+
+   <div class="myCardTypeBG"></div> 
+   <div class="myCardType">
+    <div>
+     底分：{$room.df}
+    </div>
+   </div> 
+
+   <div class="bottomMessage">
+    <img src="img/sangong9/bull_message.png" style="position: absolute; width: 100%; height: 100%;" onclick="opnemm('fangjian_kj','message')" />
+   </div> 
+   <div class="bottomHistory" style="right: 15.5vh;">
+    <img src="img/sangong9/icon_sound91.png" style="position: absolute; width: 100%; height: 100%;" onclick="opnemm('fangjian_yinyue','vaudioRoom')" />
+   </div> 
+  
+
+
+  <div id="tishi" class="alert" style="display: none;"></div>   
+  <div id="vaudioRoom" class="audioRoom" style="display: none;"></div> 
+  <div id="vroomRule" class="createRoom" style="display: none;"></div>
+  <div id='message' class="message" style="display: none;"></div> 
+
+
+
+
+
+   <div id="table" class="table" style="position: relative; width:100%; height: 100%; z-index: 80; overflow: hidden;">
+    <img src="img/sangong9/table9.jpg" class="tableBack" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+    <div class="cardDeal" id="userfp">
+      <div class="myCards" style="display: none;"></div> 
+      <div class="myCards" style="display: none;"></div>
+      <div class="myCards" style="display: none;"></div>
+    </div> 
+
+
+
+    <div class="cardOver" style="position: absolute; width: 100%; height: 100%; overflow: hidden;"></div> 
+
+
+
+      <div id="memberRobText"></div>
+    
+    <div id="memberTimesText"></div> 
+    <div id="memberTimesText2"></div> 
+
+
+
+
+    <div class="memberBull1" style="display: none;"></div>
+    
+
+
+    <div class="memberScoreText1" style="display: none;"></div> 
+   
+
+    <div id="member"></div> 
+
+    <div id="jinbi"></div> 
+
+    <div id="messageSay"></div>
+  
+
+
+
+
+
+
+
+
+
+
+    </div> 
+
+    <div id="divRobBankerText" style="position: absolute; top: 33%; left: 0px; width: 400px; height: 30px; display: none;"></div> 
+ 
+
+
+
+    <div id="" class="clock" style="position: absolute; top: 38%; left: 180px; width: 40px; height: 42px; display: none;">
+     <img src="img/sangong9/bull_clock.png" style="position: absolute; width: 100%; height: 100%;" /> 
+     <p style="position: absolute; top: 0px; left: 0px; width: 40px; height: 42px; color: white; text-align: center; line-height: 42px;"> -1 </p>
+    </div> 
+
+
+
+    
+    <div id="operationButton" style="position: absolute; top: 68%; left: 5%; width: 90%; height: 11vh; overflow: hidden;"></div>
+
+    
+   </div> 
+
+  
+
+  
+  
+
+  </div> 
+ </body>
+</html>

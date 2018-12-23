@@ -1,0 +1,6 @@
+memberBull1    牛几
+
+
+memberTimesText1   多少倍
+memberGoTimesText2  抢庄 的多少倍
+memberFreeRobText2  抢庄

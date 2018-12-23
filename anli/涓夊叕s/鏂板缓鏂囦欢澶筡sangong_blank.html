@@ -1,0 +1,712 @@
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <meta http-equiv="Pragma" content="public" /> 
+  <meta http-equiv="Cache-Control" content="public" /> 
+  <title>69312号三公房间</title> 
+  <link rel="stylesheet" type="text/css" href="css/bullshop.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/sangong-1.0.0.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/alert-1.1.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/sangong.css" /> 
+  <script type="text/javascript" src="https://gameoss.fexteam.com/files/js/fastclick.js"></script> 
+  
+
+
+</script> 
+ </head> 
+ <body> 
+ 
+  <div id="app-main" class="main" style="position: relative; width: 100%; margin: 0px auto; background: rgb(255, 255, 255); height:100%;">
+   <div style="position: absolute; background-color: rgba(0, 0, 0, 0.8); width: 100%; height: 7vh; line-height: 7vh; color: white; font-size: 2.5vh; overflow: hidden; z-index: 9998; display: none;">
+    <img src="http://goss.fexteam.com/files/d_13/images/common/alert_icon.png" style="position: absolute; top: 1.5vh; left: 3vw; width: 4vh; height: 4vh;" />
+   </div> 
+
+
+   <div class="roomCard">
+    <img src="http://goss.fexteam.com/files/d_13/images/game/roomCard.png" /> 
+    <div class="num">
+     <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(255, 255, 255); opacity: 0.2; border-radius: 10px;"></div> 
+     <div style="position: relative; padding: 0px 10px 0px 35px;">
+      74张
+     </div>
+    </div>
+   </div> 
+   <div class="round">
+    0&nbsp;/&nbsp;10&nbsp;局
+   </div> 
+   <img src="http://goss.fexteam.com/files/d_13/images/game/home.png" class="return" style="right: 10px;" /> 
+   <img src="http://goss.fexteam.com/files/images/common/note4.png" class="return" style="right: 60px;" /> 
+   <img src="http://goss.fexteam.com/files/d_13/images/common/footer_bull.png" usemap="#planetmap" class="bottom" /> 
+   <img src="http://goss.fexteam.com/files/d_13/images/common/icon_game_rule.png" class="bottomGameRule" style="z-index: 110;" /> 
+   <img src="http://goss.fexteam.com/files/d_13/images/common/icon_sound61.png" class="bottomGameIntro" style="z-index: 110;" /> 
+   <img src="http://goss.fexteam.com/files/d_13/images/common/icon_game_message.png" class="bottomGameMessage" /> 
+   <img src="http://goss.fexteam.com/files/d_10/images/sangong/btn_play_rule.png" class="bottomGameHistory" style="z-index: 110;" /> 
+ 
+
+   <div class="myCardType">
+    <div style="font-size: 10pt;">
+     底分：1分
+    </div>
+   </div> 
+  
+
+   <div id="table" class="table" style="position: relative; width:100%; height:100%; z-index: 80; overflow: hidden;">
+    <img src="img/sangong/table6.jpg" class="tableBack" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+    <div class="cardDeal" style="position: absolute; top: 19.5%; left: 19%; width: 62%; height: 55.5%;">
+     <div style="display: none;">
+      <div class="card card11" style="z-index: 14; display: none;"></div> 
+      <div class="card card12" style="z-index: 12; display: none;"></div> 
+      <div class="card card13" style="z-index: 10; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card21" style="z-index: 14; display: none;"></div> 
+      <div class="card card22" style="z-index: 12; display: none;"></div> 
+      <div class="card card23" style="z-index: 10; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card31" style="z-index: 14; display: none;"></div> 
+      <div class="card card32" style="z-index: 12; display: none;"></div> 
+      <div class="card card33" style="z-index: 10; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card41" style="z-index: 14; display: none;"></div> 
+      <div class="card card42" style="z-index: 12; display: none;"></div> 
+      <div class="card card43" style="z-index: 10; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card51" style="z-index: 14; display: none;"></div> 
+      <div class="card card52" style="z-index: 12; display: none;"></div> 
+      <div class="card card53" style="z-index: 10; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card61" style="z-index: 14; display: none;"></div> 
+      <div class="card card62" style="z-index: 12; display: none;"></div> 
+      <div class="card card63" style="z-index: 10; display: none;"></div>
+     </div> 
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!----> 
+     <div class="myCards" style="display: none;">
+      <div class="cards3D">
+       <div class="cards card0" style="display: none;">
+        <div class="face front"></div> 
+        <div class="face back cardundefined"></div>
+       </div> 
+       <div class="cards card1" style="display: none;">
+        <div class="face front"></div> 
+        <div class="face back cardundefined"></div>
+       </div> 
+       <div class="cards card2" style="display: none;">
+        <div class="face front"></div> 
+        <div class="face back cardundefined"></div>
+       </div>
+      </div>
+     </div> 
+     <div class="myCards" style="display: none;">
+      <div class="cards card00">
+       <div class="face back card-1" style="transform: rotateY(0deg);"></div>
+      </div> 
+      <div class="cards card01">
+       <div class="face back card-1" style="transform: rotateY(0deg);"></div>
+      </div> 
+      <div class="cards card02">
+       <div class="face back card-1" style="transform: rotateY(0deg);"></div>
+      </div>
+     </div>
+    </div> 
+    <div class="cardOver" style="position: absolute; top: 19.5%; left: 19%; width: 62%; height: 55.5%; overflow: hidden;">
+     <!---->
+     <div style="display: none;">
+      <div class="cards card2 card211" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card2 card221" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card2 card231" style="z-index: 10;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+    </div> 
+    <!---->
+    <div class="memberRobText2" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 30px; height: 16px;" />
+    </div>
+    
+    <div class="memberTimesText1" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 20px; height: 20px;" />
+    </div> 
+    
+    <div class="memberBull1" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+   
+    <div class="memberScoreText1" style="display: none;">
+     <label style="position: absolute; line-height: 40px; width: 100%; height: 40px; text-align: center; color: white; font-size: 16pt; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 40px; width: 100%; height: 40px; text-align: center; color: rgb(234, 171, 55); font-size: 16pt; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 40px; width: 100%; height: 40px; text-align: center; color: rgb(234, 171, 55); font-size: 16pt; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div> 
+    <!---->
+    <div class="memberScoreText2" style="display: none;">
+     <p style="position: absolute; line-height: 40px; width: 100%; height: 40px; text-align: right; color: white; font-size: 16pt; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</p> 
+     <p style="position: absolute; line-height: 40px; width: 100%; height: 40px; text-align: right; color: rgb(234, 171, 55); font-size: 16pt; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</p> 
+     <p style="position: absolute; line-height: 40px; width: 100%; height: 40px; text-align: right; color: rgb(234, 171, 55); font-size: 16pt; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</p>
+    </div>
+   
+   
+    <div class="member member1">
+     <img src="http://goss.fexteam.com/files/d_13/images/game/player.png" class="background" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/game/playerWin.png" class="background" style="display: none;" /> 
+     <div class="title">
+      　　　　　　
+     </div> 
+     <img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM4F6XvlMOsT3CjSsbTX5ktibAbtPg24wAhVTUEVkR5iciaPg/0" class="avatar" /> 
+     <div class="score">
+      0
+     </div> 
+     <img id="banker213612" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_bg.png" class="background" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 81%; display: none;" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_icon.png" class="background" style="position: absolute; top: 3%; left: 3%; width: 18px; height: 18px; display: none;" /> 
+     <img id="bankerAnimate1" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <img id="bankerAnimate11" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <div class="quitBack" style="display: none;"></div> 
+     <div class="isReady">
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member2" style="display: none;">
+     <img src="http://goss.fexteam.com/files/d_13/images/game/player.png" class="background" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/game/playerWin.png" class="background" style="display: none;" /> 
+     <div class="title"></div> 
+     <img src="" class="avatar" /> 
+     <div class="score">
+      0
+     </div> 
+     <img id="banker0" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_bg.png" class="background" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 81%; display: none;" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_icon.png" class="background" style="position: absolute; top: 3%; left: 3%; width: 18px; height: 18px; display: none;" /> 
+     <img id="bankerAnimate2" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <img id="bankerAnimate12" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member3" style="display: none;">
+     <img src="http://goss.fexteam.com/files/d_13/images/game/player.png" class="background" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/game/playerWin.png" class="background" style="display: none;" /> 
+     <div class="title"></div> 
+     <img src="" class="avatar" /> 
+     <div class="score">
+      0
+     </div> 
+     <img id="banker0" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_bg.png" class="background" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 81%; display: none;" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_icon.png" class="background" style="position: absolute; top: 3%; left: 3%; width: 18px; height: 18px; display: none;" /> 
+     <img id="bankerAnimate3" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <img id="bankerAnimate13" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member4" style="display: none; top: 5.10714%;">
+     <img src="http://goss.fexteam.com/files/d_13/images/game/player.png" class="background" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/game/playerWin.png" class="background" style="display: none;" /> 
+     <div class="title"></div> 
+     <img src="" class="avatar" /> 
+     <div class="score">
+      0
+     </div> 
+     <img id="banker0" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_bg.png" class="background" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 81%; display: none;" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_icon.png" class="background" style="position: absolute; top: 3%; left: 3%; width: 18px; height: 18px; display: none;" /> 
+     <img id="bankerAnimate4" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <img id="bankerAnimate14" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member5" style="display: none;">
+     <img src="http://goss.fexteam.com/files/d_13/images/game/player.png" class="background" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/game/playerWin.png" class="background" style="display: none;" /> 
+     <div class="title"></div> 
+     <img src="" class="avatar" /> 
+     <div class="score">
+      0
+     </div> 
+     <img id="banker0" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_bg.png" class="background" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 81%; display: none;" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_icon.png" class="background" style="position: absolute; top: 3%; left: 3%; width: 18px; height: 18px; display: none;" /> 
+     <img id="bankerAnimate5" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <img id="bankerAnimate15" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member6" style="display: none;">
+     <img src="http://goss.fexteam.com/files/d_13/images/game/player.png" class="background" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/game/playerWin.png" class="background" style="display: none;" /> 
+     <div class="title"></div> 
+     <img src="" class="avatar" /> 
+     <div class="score">
+      0
+     </div> 
+     <img id="banker0" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_bg.png" class="background" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 81%; display: none;" /> 
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_icon.png" class="background" style="position: absolute; top: 3%; left: 3%; width: 18px; height: 18px; display: none;" /> 
+     <img id="bankerAnimate6" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <img id="bankerAnimate16" src="http://goss.fexteam.com/files/d_13/images/bull/bull_banker_animate.png" style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="http://goss.fexteam.com/files/d_13/images/game/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div> 
+    <div id="playerCoins" style="display: none;">
+     <div>
+      <div class="memberCoin memberCoin10">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin11">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin12">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin13">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin14">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin15">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin16">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin17">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin20">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin21">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin22">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin23">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin24">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin25">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin26">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin27">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin30">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin31">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin32">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin33">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin34">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin35">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin36">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin37">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin40">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin41">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin42">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin43">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin44">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin45">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin46">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin47">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin50">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin51">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin52">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin53">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin54">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin55">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin56">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin57">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin60">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin61">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin62">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin63">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin64">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin65">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin66">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin67">
+       <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+    </div> 
+    <div>
+     <div class="messageSay messageSay1" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay2" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay3" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay4" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay5" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay6" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div> 
+    <div id="divRobBankerText" style="position: absolute; top: 33%; left: 0px; width: 400px; height: 30px; display: none;">
+     <p style="color: white; font-size: 10pt; width: 100%; height: 30px; line-height: 30px; text-align: center; font-family: &quot;Helvetica 微软雅黑&quot;;"></p>
+    </div> 
+    <div id="divBetText" style="position: absolute; top: 33%; left: 0px; width: 400px; height: 30px; display: none;">
+     <p style="color: white; font-size: 10pt; width: 100%; height: 30px; line-height: 30px; text-align: center; font-family: &quot;Helvetica 微软雅黑&quot;;">闲家下注</p>
+    </div> 
+    <div id="divBetText" style="position: absolute; top: 33.5%; left: 0px; width: 400px; height: 30px; display: none;">
+     <p style="color: white; font-size: 10pt; width: 100%; height: 30px; line-height: 30px; text-align: center; font-family: &quot;Helvetica 微软雅黑&quot;;">等待摊牌</p>
+    </div> 
+    <div id="" class="clock" style="position: absolute; top: 38%; left: 180px; width: 40px; height: 42px; display: none;">
+     <img src="http://goss.fexteam.com/files/d_13/images/bull/bull_clock.png" style="position: absolute; width: 100%; height: 100%;" /> 
+     <p style="position: absolute; top: 0px; left: 0px; width: 40px; height: 42px; color: white; text-align: center; line-height: 42px;"> -1 </p>
+    </div> 
+    <div id="operationButton" style="position: absolute; top: 53%; left: 5%; width: 360px; height: 80px; overflow: hidden;">
+     <div style="position: absolute; top: 22px; left: 74px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_orange.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       抢庄
+      </div>
+     </div> 
+     <div style="position: absolute; top: 22px; left: 190px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_blue _1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       不抢
+      </div>
+     </div> 
+     <div style="position: absolute; top: 22px; left: 74px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_orange.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       上庄
+      </div>
+     </div> 
+     <div style="position: absolute; top: 22px; left: 190px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_blue _1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       不上庄
+      </div>
+     </div> 
+     <div style="position: absolute; top: 22px; left: 74px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_blue _1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       下庄
+      </div>
+     </div> 
+     <div style="position: absolute; top: 22px; left: 190px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_orange.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       准备
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 40px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       1倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 112px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       2倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 184px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       4倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 256px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg_blue.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       不抢
+      </div>
+     </div> 
+     <div id="showShowCardButton" style="position: absolute; top: 22px; left: 132px; width: 96px; height: 36px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_button_blue _1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width: 96px; height: 36px; line-height: 36px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       摊牌
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 40px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       1倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 112px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       2倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 184px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       4倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute; top: 24px; left: 256px; width: 64px; height: 32px; display: none;">
+      <img src="http://goss.fexteam.com/files/d_10/images/sangong/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 64px; height: 32px; line-height: 32px; text-align: center; color: white; font-size: 12pt; font-weight: bold;">
+       5倍
+      </div>
+     </div> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80px; display: none;">
+      <p style="position: absolute; width: 100%; height: 100%; color: white; font-size: 11pt; text-align: center; line-height: 80px; font-family: &quot;Helvetica 微软雅黑&quot;;">等待闲家下注</p>
+     </div> 
+     <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80px; display: none;">
+      <p style="position: absolute; width: 100%; height: 100%; color: white; font-size: 11pt; text-align: center; line-height: 80px; font-family: &quot;Helvetica 微软雅黑&quot;;">点击牌面看牌</p>
+     </div>
+    </div>
+   </div> 
+   <div id="ranking" class="ranking hideRanking" style="z-index: 1; width: 800px; height: 1296.8px;">
+    <div class="rankBack">
+     <img src="http://goss.fexteam.com/files/d_10/images/sangong/rank_bg.jpg" style="position: absolute; top: 0px; left: 0px; width: 100%;" />
+    </div> 
+    <div class="rankText" style="position: absolute; top: 4%;">
+     <img src="http://goss.fexteam.com/files/d_10/images/sangong/rank.png" style="position: absolute; top: 1vw; left: 30vw; width: 140vw;" /> 
+     <div class="time" style="position: absolute; top: 48vw; width: 100%; display: none;">
+      <a style="font-size: 6vw; padding: 1vw 8vw; border-radius: 6vw; background: rgb(6, 73, 67); border: 2px solid rgb(119, 255, 232);">房间号:69312&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10局</a>
+     </div> 
+     <div style="height: 67vw;"></div> 
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_13/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_13/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_13/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_13/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_13/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_13/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+    </div> 
+    <div class="button roundEndShow">
+     <img src="http://goss.fexteam.com/files/images/common/long_save.png" style="float: left; width: 30%; margin-left: 13%;" /> 
+     <img src="http://goss.fexteam.com/files/images/common/score_search1.png" style="float: right; width: 30%; margin-right: 14%;" />
+    </div>
+   </div> 
+   <div class="message" style="display: none;">
+    <div class="messageBack"></div> 
+    <div class="textPart">
+     <div class="outline"></div> 
+     <div class="textList">
+      <div class="textItem">
+       please快点打牌
+      </div>
+      <div class="textItem">
+       我出去叫人
+      </div>
+      <div class="textItem">
+       你的牌好靓哇
+      </div>
+      <div class="textItem">
+       我当年横扫澳门五条街
+      </div>
+      <div class="textItem">
+       算你牛逼
+      </div>
+      <div class="textItem">
+       别吹牛逼，有本事干到底
+      </div>
+      <div class="textItem">
+       输得裤衩都没了
+      </div>
+      <div class="textItem">
+       我给你们送温暖了
+      </div>
+      <div class="textItem">
+       谢谢老板
+      </div> 
+      <div class="textItem" style="height: 5px; background: rgb(67, 69, 71);"></div>
+     </div>
+    </div>
+   </div> 
+   <div id="endCreateRoom" class="end" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 120; display: none;">
+    <img src="" id="end" usemap="#planetmap1" style="width: 100vw; position: absolute; top: 0px; left: 0px; height: 100vh;" /> 
+    <div id="endCreateRoomBtn" style="position: absolute; right: 13vw; width: 33vw; height: 9.6vw; bottom: 12%; z-index: 121; overflow: hidden;"></div>
+   </div> 
+  
+
+   <div class="alert" style="display: none;">
+    <div class="alertBack"></div> 
+    <img src="http://goss.fexteam.com/files/images/common/note.png" style="position: absolute; top: 20vh; width: 90vw; left: 5vw;" />
+   </div>
+  </div> 
+ </body>
+</html>

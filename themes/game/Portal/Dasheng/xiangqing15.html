@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <title>大圣娱乐大厅</title>
+    <meta name="apple-mobile-web-app-title" content="大圣娱乐大厅" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="https://cdn-1255620552.file.myqcloud.com/js/jquery-3.2.1.min.js"></script>
+    <link href="/app/css/dashengpkdetail.css?t=1517280510" rel="stylesheet" />
+</head>
+<body>
+<div id="loadings" style="position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;z-index:999;font-size:16px;">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+    <div class="loadings-text">
+        页面加载中
+        <span data-item="1">.</span>
+        <span data-item="2">.</span>
+        <span data-item="3">.</span>
+    </div>
+</div>
+<div id="networkReconnect" style="position: fixed; width:2.88rem; line-height:.2rem; font-size:.1rem; left:.36rem; text-align: center; bottom:45%; background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); color:#fff; display:none; z-index:9999;">
+    您的网络已断开，我们正在尝试重连...
+</div>
+<div class="wrap">
+    <div class="top">
+        对战明细
+        <div class="return"></div>
+        <div class="scoreboard"></div>
+    </div>
+    <div class="detailed">
+        <div class="game-info">
+            <div class="game-code"></div>
+            <div class="times"></div>
+        </div>
+        <div class="game-rules"></div>
+    </div>
+    <div class="detailed-list"></div>
+</div>
+<script src="/app/js/dashengpkdetail.js"></script>
+<script>
+    const DOMAIN = 'dasheng.shjggroup.com';
+    const API_DOMAIN = 'dashengzhongyuapi.lfzgame.com';
+    const WS_DOMAIN = 'dashengzhongyuws.lfzgame.com';
+    const JUMP_DOMAIN = 'dasheng.shjggroup.com';
+    const CDN_DOMAIN = 'https://cdn-1255620552.file.myqcloud.com/';
+    const USE_QRCODE = 0;
+    const IS_SSL = 1;
+    const WEB_TITLE = '大圣娱乐大厅';
+    var user = {
+        "id": "880460",
+        "wechat_id": "19",
+        "nickname": "kx",
+        "sex": "1",
+        "citys": "Chongqing,Shapingba",
+        "path": "https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/Q0j4TwGTfTLU7AAZsf7SNuyMcwkfeNOIEaDAJKBLE8UrVsQ20s8EMMNcj5cG5ghdBrIMPR3GhIl9fUpWKibkEDg\/132",
+        "room_cards": "39"
+    };
+    wx.onload = function() {
+        if(!wx.loaded) {
+            wx.loaded = 1;
+            win.version = '2.0.0';
+            win.app = 0;
+            win.sign = 'dashengzhongyu';
+            win.token = 'v2Ymvo5tOMlf6LFanZxolUzsOqpeozjEqJm6a8q2';
+            notice.data = '';
+            win.load();
+            win.ready();
+        }
+
+    };
+    wx.config({
+        appId: 'wxd8803917b97c1289',
+        timestamp: '1517322322',
+        nonceStr: '67f6b45b4a36f2ad0bb45226adeb9ad4',
+        signature: '10d6b53205b862d3076bc2cd2944b773c9a035b9',
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'getLocation', 'hideOptionMenu']
+    });
+    wx.ready(function() {
+        if (wx.readed && wx.readed == 1) return;
+        wx.readed = 1;
+        if (wx.loaded == 1) wx.onload();
+    });
+    window.onload = function() {
+        wx.onload();
+        wx.loaded = 1;
+    }
+</script>
+</body>
+</html>

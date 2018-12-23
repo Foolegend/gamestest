@@ -1,0 +1,74 @@
+/* CSS Document by QQ 7182141 */
+* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+body,ul,ol,li,table,tr,td,span,nav,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,img,legend,form,fieldset,input,select,button,textarea,p { margin: 0; padding: 0;}
+ol, ul,li {list-style: none;list-style-type:none;}
+body,input,select,textarea {line-height: 1.5em; font-family:'Helvetica Neue',Helvetica,"Microsoft Yahei","SimHei" ,sans-serif; color: #000;}
+img {vertical-align: middle;border: 0;}
+a:link,a:visited {color:#000;text-decoration:none;}
+a:hover {text-decoration:none;}
+body {font-size:100%;color:#000;font-family:'脦藰膶铆艃墓艧脷','Microsoft Yahei', Tahoma,Verdana;background:#ebebeb;padding-top: 3rem;}
+h1,h2,h3,h4,h5,h6 {font-size:1rem;}
+table,td,tr,th{font-size:12px;}
+
+.cr {clear:both;height:0px;overflow:hidden;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;font-size:0;}
+.clearfix{*zoom:1;}
+.fl {float:left;}
+.fr {float:right;}
+i,em {font-style: normal;}
+.mt10 {margin-top:1rem;}
+.hidden,.ins {display:none}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;font-size:0;}
+.clearfix{*zoom:1;}
+@media screen and (min-width : 768px) {html {font-size: 150%;}}
+@media only screen and (max-width:320px) {
+html{font-size: 62.5%}
+}
+
+header {position:fixed;top:0;left:0;width: 100%;height: 3rem;max-height:3rem;font-size: 0.875rem;background-color: #3B3A3E;overflow: hidden;z-index: 10;}
+header div {height: 3rem;position: relative;}
+header p {display: block;height: 3rem;line-height: 3rem;overflow: hidden;vertical-align: middle;text-align: center;color: #fff;position: absolute;top:0;left: 0;width: 100%;}
+header b {font-size: 1.2rem;font-weight: 400;}
+header a {color: #fff;}
+.back {display:block;float: left;padding: .8rem 0 0 .6rem;height:3rem;}
+.back em {float:left;display: inline-block;color: #fff;font-size: 1rem}
+.back i {float:left;display:inline-block;width:1.6rem;height:1.4rem;background:url(back.png) no-repeat;background-size:auto 1.4rem;}
+a.a-menu {overflow: hidden;float: right;width: 2rem;height: 2rem;background: url(user.png) no-repeat center center;background-size: 1.5rem auto; cursor:pointer;margin: .5rem 1rem .5rem 0;text-indent: -9999em;}
+
+section {padding: .4rem 1rem 3.8rem;}
+p.time {text-align: center;margin:.5rem 0 .2rem 0;width: 100%;float: left;}
+p.time span {font-size: .75rem;color: #fff;background: #CECECE;display: inline-block;border-radius: .3rem;padding: 0 .5rem;text-align: center;}
+.msg {position: relative;margin:.3rem 0;padding:.5rem 0 0 4.5rem;float: left;width: 100%;}
+.msg .face {width: 3rem;height: 3rem;position: absolute;top:.5rem;left: 0;}
+.msg .face img {width: 100%;height: 100%;}
+.msg .desc {border: 1px solid #DBDBDB;padding:.5rem;line-height: 1.6rem;background: #FAFAFA;border-radius: .3rem;max-width: 90%;display:inline-block;position: relative;min-height: 3rem;}
+.msg .desc:after,.msg .desc:before {content: ".";width:0;height:0;border-width:5px 8px 5px 0;border-style:solid;border-color:transparent #DBDBDB transparent transparent;position: absolute;top:1.2rem;left: -8px;margin-left: -3px;text-indent: -9999em;}
+.msg .desc:before {border-style:solid;border-color:transparent #FAFAFA transparent transparent;left: -5px;z-index: 1;}
+
+.hfmsg {padding: .5rem 4.5rem 0 0;margin-bottom: .5rem;}
+.hfmsg .face {left: auto;right: 0;}
+.hfmsg .desc {float: right;border: 1px solid #90CD6C;background: #A0E75A;}
+.hfmsg .desc:after,.hfmsg .desc:before {content: ".";width:0;height:0;border-width:5px 0 5px 8px;border-style:solid;border-color:transparent transparent transparent #90CD6C ;position: absolute;top:1.2rem;left:auto;right: -8px;margin-left: -3px;text-indent: -9999em;}
+.hfmsg .desc:before {border-style:solid;border-color:transparent transparent transparent #A0E75A ;left:auto;right: -6px;z-index: 1;}
+
+
+#menu{position:fixed;bottom:0px;width:100%;height:3rem;line-height:3rem;z-index:999;background:#fafafa;border-top: 1px solid #b0b0b0;}
+#menu ul{width:88%;height:100%;float: left;}
+#menu .home {width: 12%;float: left;}
+#menu .home a {display: block;text-indent: -9999em;background: url("http://dood.aiaijiutie.cn/ff_files/home.png") no-repeat center center;background-size:auto 60%;}
+#menu ul li{float:left;width:33.333333%;height:100%;text-align:center;position:relative;font-size:1rem;border-left: 1px solid #b0b0b0;z-index: 998;}
+
+#menu .menu_li {color:#4a4a4a;line-height:3rem;vertical-align: middle; cursor: pointer; position:relative;z-index:11;background:#fafafa;}
+#menu .menu_li em {display: inline-block;width: .9rem;height:.9rem;background: url("http://dood.aiaijiutie.cn/ff_files/coin.png") no-repeat 0 center;background-size: 100% auto;margin-right: .5rem; vertical-align:middle;}
+
+#menu ul li span{position:absolute;bottom:3rem;left:50%;width:88%;margin-left:-44%;margin-bottom:14px;text-align:center;z-index:10;display: block;}
+#menu ul li span div{padding: .5rem;border: 1px solid #B0B0B0;border-radius: .3rem;position: relative;background: #fafafa;}
+#menu ul li span div:after,#menu ul li span div:before {content: ".";width:0;height:0;border-width:7px 5px 0;border-style:solid;border-color:#B0B0B0 transparent transparent;position: absolute;bottom: -7px;left: 50%;margin-left: -3px;text-indent: -9999em;}
+#menu ul li span div:before {bottom: -6px;border-width:7px 5px 0;border-style:solid;border-color:#FAFAFA transparent transparent;z-index: 1;}
+#menu ul li span a{line-height:2.4rem;height:2.4rem;color:#454545;border-bottom: 1px solid #b0b0b0;display: block;font-size:1rem;}
+#menu ul li span a:last-child {border-bottom: 0;}
+
+.footer_front{position:fixed;width:100%;height:100%;top:0px;left:0px;z-index:888;display:none;}
+
+*{
+-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);}

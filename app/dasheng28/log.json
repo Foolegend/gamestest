@@ -1,0 +1,446 @@
+-= Fiddler Event Log =-
+
+20:40:41:0378 WSSession618.WebSocket'WebSocket #618'
+MessageID:	Client.21
+MessageType:	Close
+PayloadString:	03-E9
+Masking:	06-7D-61-3F
+
+20:40:41:1136 WSSession618.WebSocket'WebSocket #618'
+MessageID:	Server.22
+MessageType:	Close
+PayloadString:
+Masking:	<none>
+
+20:40:41:1197 [WebSocket #618] Read from Server returned error: 0
+20:40:41:1202 [WebSocket #618] Read from Client failed... 未将对象引用设置到对象的实例。
+20:40:42:7267 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.1
+MessageType:	Text
+PayloadString:	join
+Masking:	E8-76-B4-2A
+
+20:40:42:8032 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.2
+MessageType:	Text
+PayloadString:	join_success
+Masking:	<none>
+
+20:40:42:8037 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.3
+MessageType:	Text
+PayloadString:	init
+Masking:	05-A3-AC-B5
+
+20:40:42:8042 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.4
+MessageType:	Text
+PayloadString:	connect_success
+Masking:	1D-09-E9-9A
+
+20:40:42:8839 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.5
+MessageType:	Text
+PayloadString:	{"act":"init","data":{"number":"420570","running":"0","room_users":[{"user_id":"880460","nickname":"kx","path":"https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/Q0j4TwGTfTLU7AAZsf7SNuyMcwkfeNOIEaDAJKBLE8UrVsQ20s8EMMNcj5cG5ghdBrIMPR3GhIl9fUpWKibkEDg\/132","online":"1","is_join":"0","value":"0","position":"1","is_master":"0","ready":"0"},{"user_id":"1002365","nickname":"NIC","path":"https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/Z74w1ziaTmzSZCRFzus7G8lTjpicOFUxqI4IrbwR3YPYCFMb40BiaXzcGicb1mgEWJN7YJYzz2KUU1vDdicORbibmkkw\/132","online":"1","is_join":"1","value":"0","position":"2","is_master":"0","ready":"1"}],"max_matches":"12","cur_match":"0","card_rule":"1","room_rule":{"card_rule":"1","chip":["1","5","10","30"],"zhuang_value":"0","max_point":"30","chip_type":"1"},"zhuang_value":"0","chip":["1","5","10","30"],"zhuang_type":"1","ante":[],"cards":[],"dices":[],"card_code":[]},"next_master":"0"}
+Masking:	<none>
+
+20:40:42:8839 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.6
+MessageType:	Text
+PayloadString:	{"act":"gameRunning","data":{"running":"0","cur_match":"0","users":[["1002365","1","0"],["880460","1","0"]]}}
+Masking:	<none>
+
+20:40:43:7768 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.7
+MessageType:	Text
+PayloadString:	{"data":"","act":"ready"}
+Masking:	A3-A2-8E-0D
+
+20:40:43:8601 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.8
+MessageType:	Text
+PayloadString:	{"act":"ready","data":"880460"}
+Masking:	<none>
+
+20:40:43:8601 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.9
+MessageType:	Text
+PayloadString:	{"act":"forbidLeaveRoom","data":""}
+Masking:	<none>
+
+20:40:43:8606 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.10
+MessageType:	Text
+PayloadString:	{"act":"start","data":{"cur_match":"1","user_ids":["1002365","880460"],"running":"2"}}
+Masking:	<none>
+
+20:40:44:8689 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.11
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"6"}
+Masking:	<none>
+
+20:40:44:9597 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.12
+MessageType:	Text
+PayloadString:	{"data":1,"act":"grabZhuang"}
+Masking:	2E-A9-AE-04
+
+20:40:45:0374 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.13
+MessageType:	Text
+PayloadString:	{"act":"grabZhuang","data":{"user_id":"880460","zhuang_multiple":"1","sex":"1","running":"2"}}
+Masking:	<none>
+
+20:40:45:4611 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.14
+MessageType:	Text
+PayloadString:	{"act":"grabZhuang","data":{"user_id":"1002365","zhuang_multiple":"1","sex":"0","running":"2"}}
+Masking:	<none>
+
+20:40:46:4618 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.15
+MessageType:	Text
+PayloadString:	{"act":"selectedMaster","data":{"master_userid":"1002365","random_users":["1002365","880460"],"running":"3"}}
+Masking:	<none>
+
+20:40:46:4618 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.16
+MessageType:	Text
+PayloadString:	{"act":"count_down","data":"2400"}
+Masking:	<none>
+
+20:40:48:8616 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.17
+MessageType:	Text
+PayloadString:	{"act":"initCards","data":{"xianjia_user_ids":["880460"],"running":"4"}}
+Masking:	<none>
+
+20:40:50:8624 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.18
+MessageType:	Text
+PayloadString:	{"act":"clickDealsCards","data":{"master_id":"1002365","running":"5"}}
+Masking:	<none>
+
+20:40:51:8734 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.19
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"6"}
+Masking:	<none>
+
+20:40:52:7264 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.20
+MessageType:	Text
+PayloadString:	ping
+Masking:	<none>
+
+20:40:52:7269 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.21
+MessageType:	Text
+PayloadString:	pong
+Masking:	2D-74-5F-BF
+
+20:40:52:8676 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.22
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"5"}
+Masking:	<none>
+
+20:40:53:8678 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.23
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"4"}
+Masking:	<none>
+
+20:40:54:8677 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.24
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"3"}
+Masking:	<none>
+
+20:40:55:5915 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.25
+MessageType:	Text
+PayloadString:	{"act":"dealCards","data":{"cards":{
+"s":[{"color":"3","value":"0"},{"color":"1","value":"0"}],
+"t":[{"color":"3","value":"0"},{"color":"2","value":"0"}],
+"d":[{"color":"2","value":"0"},{"color":"0","value":"0"}],
+"z":[{"color":"2","value":"0"},{"color":"3","value":"0"}]},"dices":{"dices":["4","6"],"dices_point":"2"},"running":"6"}}
+Masking:	<none>
+
+20:40:58:7262 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.26
+MessageType:	Text
+PayloadString:	ping
+Masking:	<none>
+
+20:40:58:7292 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.27
+MessageType:	Text
+PayloadString:	pong
+Masking:	DC-D1-84-EE
+
+20:41:00:5922 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.28
+MessageType:	Text
+PayloadString:	{"act":"autoAnte","data":{"xianjia_user_ids":["880460"],"master_id":"1002365","running":"7"}}
+Masking:	<none>
+
+20:41:01:5930 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.29
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"15"}
+Masking:	<none>
+
+20:41:02:2247 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.30
+MessageType:	Text
+PayloadString:	{"data":{"value":"10","block":"t","size":"1"},"act":"setAnte"}
+Masking:	AB-05-44-75
+
+20:41:02:3020 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.31
+MessageType:	Text
+PayloadString:	{"act":"setAnte","data":{"user_id":"880460","sex":"1","block":"t","value":"10","chip_value":["10"],"all_value":"10","current_value":"-10","size":"1"}}
+Masking:	<none>
+
+20:41:02:5922 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.32
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"14"}
+Masking:	<none>
+
+20:41:02:6628 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.33
+MessageType:	Text
+PayloadString:	{"data":{"value":"10","block":"s","size":"1"},"act":"setAnte"}
+Masking:	A1-D8-2B-E2
+
+20:41:02:7449 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.34
+MessageType:	Text
+PayloadString:	{"act":"setAnte","data":{"user_id":"880460","sex":"1","block":"s","value":"10","chip_value":["10"],"all_value":"10","current_value":"-20","size":"1"}}
+Masking:	<none>
+
+20:41:03:2052 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.35
+MessageType:	Text
+PayloadString:	{"data":{"value":"10","block":"d","size":"1"},"act":"setAnte"}
+Masking:	7C-26-62-4A
+
+20:41:03:2829 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.36
+MessageType:	Text
+PayloadString:	{"act":"setAnte","data":{"user_id":"880460","sex":"1","block":"d","value":"10","chip_value":["10"],"all_value":"10","current_value":"-30","size":"1"}}
+Masking:	<none>
+
+20:41:03:5928 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.37
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"13"}
+Masking:	<none>
+
+20:41:03:7372 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.38
+MessageType:	Text
+PayloadString:	{"data":{"value":"10","block":"d","size":"1"},"act":"setAnte"}
+Masking:	B6-34-E2-08
+
+20:41:03:8142 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.39
+MessageType:	Text
+PayloadString:	{"act":"setAnte","data":"-1"}
+Masking:	<none>
+
+20:41:04:0500 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.40
+MessageType:	Text
+PayloadString:	{"data":{"value":"10","block":"t","size":"1"},"act":"setAnte"}
+Masking:	E9-77-51-55
+
+20:41:04:1271 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.41
+MessageType:	Text
+PayloadString:	{"act":"setAnte","data":"-1"}
+Masking:	<none>
+
+20:41:04:5921 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.42
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"12"}
+Masking:	<none>
+
+20:41:05:5928 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.43
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"11"}
+Masking:	<none>
+
+20:41:06:5940 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.44
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"10"}
+Masking:	<none>
+
+20:41:07:5924 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.45
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"9"}
+Masking:	<none>
+
+20:41:07:7609 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.46
+MessageType:	Text
+PayloadString:	{"act":"playerjoin","data":{"user_id":"780247","nickname":"\u6a58\u6a58","path":"https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/lvnXFUxSt69xicXSELWIFvN89UWVRpb7Px7AzCn20dVII8AH5pUb9DIcJXtiafpcwOgy3MrB5ALTmYo8BlLAmInQ\/132","sex":"1","position":"3"}}
+Masking:	<none>
+
+20:41:08:5924 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.47
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"8"}
+Masking:	<none>
+
+20:41:09:5926 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.48
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"7"}
+Masking:	<none>
+
+20:41:09:7264 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.49
+MessageType:	Text
+PayloadString:	ping
+Masking:	<none>
+
+20:41:09:7279 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.50
+MessageType:	Text
+PayloadString:	pong
+Masking:	AA-8E-95-0B
+
+20:41:10:5945 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.51
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"6"}
+Masking:	<none>
+
+20:41:11:5920 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.52
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"5"}
+Masking:	<none>
+
+20:41:12:5922 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.53
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"4"}
+Masking:	<none>
+
+20:41:13:4191 [Fiddler] No HTTPS request was received from (qqbrowser:14828) new client socket, port 52038.
+20:41:13:5927 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.54
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"3"}
+Masking:	<none>
+
+20:41:14:5928 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.55
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"2"}
+Masking:	<none>
+
+20:41:15:5924 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.56
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"1"}
+Masking:	<none>
+
+20:41:15:7267 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.57
+MessageType:	Text
+PayloadString:	ping
+Masking:	<none>
+
+20:41:15:7282 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.58
+MessageType:	Text
+PayloadString:	pong
+Masking:	CE-FD-3F-41
+
+20:41:16:5924 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.59
+MessageType:	Text
+PayloadString:	{"act":"timer","data":"0"}
+Masking:	<none>
+
+20:41:16:5933 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.60
+MessageType:	Text
+PayloadString:	{"act":"showdownOver","data":{"cards":{
+"s":[{"color":"3","value":"8"},{"color":"1","value":"6"}],
+"t":[{"color":"3","value":"1"},{"color":"2","value":"2"}],
+"d":[{"color":"2","value":"6"},{"color":"0","value":"5"}],
+"z":[{"color":"2","value":"1"},{"color":"3","value":"5"}]},"dices":{"dices":["4","6"],"dices_point":"2"},"card_code":{
+"s":{"card":["8","6"],"point":"4","code":"4","multiple":"1","is_win":"0"},
+"t":{"card":["2","1"],"point":"3","code":"3","multiple":"1","is_win":"0"},
+"d":{"card":["6","5"],"point":"1","code":"1","multiple":"1","is_win":"0"},
+"z":{"card":["5","1"],"point":"6","code":"6","multiple":"1"}},
+"running":"8"}}
+Masking:	<none>
+
+20:41:20:7564 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.61
+MessageType:	Text
+PayloadString:	ping
+Masking:	09-6C-74-98
+
+20:41:20:8331 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.62
+MessageType:	Text
+PayloadString:	pong
+Masking:	<none>
+
+20:41:21:5948 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.63
+MessageType:	Text
+PayloadString:	{"act":"settlement","data":[{"user_id":"1002365","get_value":"30","lost_value":"0","win_status":"0","value":"30","total_value":"30","is_master":"1"},{"user_id":"880460","is_master":"0","card":{"is_win":"0","multiple":"1","code":"1","cards":[{"color":"2","value":"6"},{"color":"0","value":"5"}]},"value":"-30","total_value":"-30"}]}
+Masking:	<none>
+
+20:41:25:7592 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.64
+MessageType:	Text
+PayloadString:	ping
+Masking:	64-36-46-0B
+
+20:41:25:8363 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.65
+MessageType:	Text
+PayloadString:	pong
+Masking:	<none>
+
+20:41:26:8551 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.66
+MessageType:	Text
+PayloadString:	{"act":"ready","data":"780247"}
+Masking:	<none>
+
+20:41:30:0933 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.67
+MessageType:	Text
+PayloadString:	{"act":"ready","data":"1002365"}
+Masking:	<none>
+
+20:41:30:5569 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Client.68
+MessageType:	Close
+PayloadString:	03-E9
+Masking:	D1-B7-9C-39
+
+20:41:30:6337 WSSession734.WebSocket'WebSocket #734'
+MessageID:	Server.69
+MessageType:	Close
+PayloadString:
+Masking:	<none>
+
+20:41:30:6403 [WebSocket #734] Read from Server returned error: 0
+20:41:30:6403 [WebSocket #734] Read from Client failed... 未将对象引用设置到对象的实例。

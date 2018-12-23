@@ -1,0 +1,1386 @@
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <title>46860号九人三公房间</title> 
+  <link rel="stylesheet" type="text/css" href="css/sangong9-1.0.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/alert-1.1.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/bullshop-1.0.css" /> 
+  <script type="text/javascript" src="https://gameoss.fexteam.com/files/js/fastclick.js"></script> 
+  <script type="text/javascript">
+	window.addEventListener('load', function() {
+		FastClick.attach(document.body);
+	}, false);
+  </script> 
+ </head> 
+ <body> 
+  
+  <div id="app-main" class="main" style="position: relative; width: 100%; margin: 0px auto; background: rgb(255, 255, 255); height:100%;">
+   <div style="position: absolute; background-color: rgba(0, 0, 0, 0.8); width: 100%; height: 7vh; line-height: 7vh; color: white; font-size: 2.5vh; overflow: hidden; z-index: 9998; display: none;">
+    <img src="http://goss.fexteam.com/files/d_13/images/common/alert_icon.png" style="position: absolute; top: 1.5vh; left: 3vw; width: 4vh; height: 4vh;" />
+   </div> 
+   <div id="marquee" style="position: absolute; top: 0px; left: 12vw; background-color: rgba(0, 0, 0, 0); width: 88vw; height: 7vh; line-height: 7vh; color: white; font-size: 2.5vh; overflow: hidden; z-index: 9999; display: none;">
+    <div style="width: 100000px; margin-left: 352px; animation: marqueeAnimation-4463904 45.9102s linear 0s;" class="js-marquee-wrapper">
+     <div class="js-marquee" style="margin-right: 50px; float: left;"> 
+     </div>
+     <div class="js-marquee" style="margin-right: 50px; float: left;"> 
+     </div>
+     <style>@-webkit-keyframes marqueeAnimation-4463904  { 100%  {margin-left:-50px}}</style>
+    </div>
+   </div> 
+   <div class="roomCard">
+    <img src="img/sangong9/roomCard.png" /> 
+    <div class="num">
+     <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(0, 0, 0); opacity: 0.6; border-radius: 1.5vh;"></div> 
+     <div style="position: relative; padding: 0px 1.5vh 0px 5vh;">
+      72张
+     </div>
+    </div>
+   </div> 
+   <img src="img/sangong9/tab_bottom.png" alt="" class="tabBottom" /> 
+   <div class="round" style="position: fixed; color: rgb(255, 255, 255); opacity: 0.7;">
+    0&nbsp;/&nbsp;12&nbsp;局
+   </div> 
+   <img src="img/sangong9/btn_game_home.png" class="return" /> 
+   <img src="http://goss.fexteam.com/files/images/common/note5.png" class="return" style="right: 28.5vh;" /> 
+   <img src="http://goss.fexteam.com/files/d_7/images/bull9/btn_play_rule.png" class="return" style="right: 35vh;" /> 
+   <img src="img/sangong9/btn_game_rule.png" class="bGameRule" style="right: 22vh;" /> 
+   <div class="disconnect" style="position: fixed; top: 45%; left: 0px; width: 100%; text-align: center; z-index: 101; display: none;">
+    <div style="width: 250px; height: 27px; position: absolute; top: -2px; left: 50%; margin-left: -125px; background: rgb(0, 0, 0); opacity: 0.5; border-radius: 15px;"></div>
+    <a style="font-size: 16px; color: rgb(255, 255, 255); padding: 5px 14px; position: relative;">已断开连接，正在重新连接...</a>
+   </div> 
+   <div class="myCardTypeBG"></div> 
+   <div class="myCardType">
+    <div>
+     底分：5分
+    </div>
+   </div> 
+   <div class="bottomMessage">
+    <img src="img/sangong9/bull_message.png" style="position: absolute; width: 100%; height: 100%;" />
+   </div> 
+   <div class="bottomHistory" style="right: 15.5vh;">
+    <img src="http://goss.fexteam.com/files/d_25/images/common/icon_sound91.png" style="position: absolute; width: 100%; height: 100%;" />
+   </div> 
+   <map name="planetmap" id="planetmap"><area shape="rect" coords="0,0,125,50" class="showRanking"></area> <area shape="rect" coords="266.6666666666667,0,400,50"></area></map> 
+   <div id="valert" class="alert" style="display: none;">
+    <div class="alertBack"></div> 
+    <div class="mainPart">
+     <div class="backImg">
+      <div class="blackImg"></div>
+     </div> 
+     <div class="id" style="display: none;">
+      <img src="http://goss.fexteam.com/files/images/ID.png" /> 
+      <div class="text">
+        你的大番薯ID:413735 
+      </div>
+     </div> 
+     <div class="alertText">
+      <!----> 
+      <div class="rull" style="font-size: 2.2vh; display: none;">
+        模式： 
+       <!----> 
+       <a>明牌抢庄</a> 
+       <!---->
+       <br /> 底分： 
+       <!----> 
+       <!----> 
+       <a>5分</a> 
+       <!----> 
+       <!----> 
+       <!----> 
+       <!---->
+       <br /> 
+       <!----> 
+       <!----> 
+       <!----> 
+       <!----> 局数： 
+       <a>12局X2房卡 </a> 
+       <!---->
+      </div> 
+      <div></div>
+     </div> 
+     <!----> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       返回首页
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       返回首页
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonLeft">
+       返回首页
+      </div> 
+      <div class="buttonRight">
+       取消
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonLeft">
+       创建房间
+      </div> 
+      <div class="buttonRight">
+       加入游戏
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       领取
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       返回首页
+      </div>
+     </div> 
+     <div style="display: none;"></div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       确定
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonLeft">
+       取消
+      </div> 
+      <div class="buttonRight">
+       确定
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       知道了
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       确定
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       确定
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       确定
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       确定
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       重新登录
+      </div>
+     </div> 
+     <div style="display: none;">
+      <div class="buttonMiddle">
+       确定
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div id="table" class="table" style="position: relative; width:100%; height: 100%; z-index: 80; overflow: hidden;">
+    <img src="img/sangong9/table9.jpg" class="tableBack" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+    <div class="cardDeal">
+     <div style="display: none;">
+      <div class="card card11" style="z-index: 14; display: none;"></div> 
+      <div class="card card12" style="z-index: 13; display: none;"></div> 
+      <div class="card card13" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card21" style="z-index: 14; display: none;"></div> 
+      <div class="card card22" style="z-index: 13; display: none;"></div> 
+      <div class="card card23" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card31" style="z-index: 14; display: none;"></div> 
+      <div class="card card32" style="z-index: 13; display: none;"></div> 
+      <div class="card card33" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card41" style="z-index: 14; display: none;"></div> 
+      <div class="card card42" style="z-index: 13; display: none;"></div> 
+      <div class="card card43" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card51" style="z-index: 14; display: none;"></div> 
+      <div class="card card52" style="z-index: 13; display: none;"></div> 
+      <div class="card card53" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card61" style="z-index: 14; display: none;"></div> 
+      <div class="card card62" style="z-index: 13; display: none;"></div> 
+      <div class="card card63" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card71" style="z-index: 14; display: none;"></div> 
+      <div class="card card72" style="z-index: 13; display: none;"></div> 
+      <div class="card card73" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card81" style="z-index: 14; display: none;"></div> 
+      <div class="card card82" style="z-index: 13; display: none;"></div> 
+      <div class="card card83" style="z-index: 12; display: none;"></div>
+     </div>
+     <div style="display: none;">
+      <div class="card card91" style="z-index: 14; display: none;"></div> 
+      <div class="card card92" style="z-index: 13; display: none;"></div> 
+      <div class="card card93" style="z-index: 12; display: none;"></div>
+     </div> 
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!----> 
+     <div class="myCards" style="display: none;">
+      <div class="cards3D">
+       <div class="cards card0" style="display: none;">
+        <div class="face front"></div> 
+        <div class="face back cardundefined"></div>
+       </div> 
+       <div class="cards card1" style="display: none;">
+        <div class="face front"></div> 
+        <div class="face back cardundefined"></div>
+       </div> 
+       <div class="cards card2" style="display: none;">
+        <div class="face front"></div> 
+        <div class="face back cardundefined"></div>
+       </div>
+      </div>
+     </div> 
+     <div class="myCards" style="display: none;">
+      <div class="cards card00">
+       <div class="face back card-1" style="transform: rotateY(0deg);"></div>
+      </div> 
+      <div class="cards card01">
+       <div class="face back card-1" style="transform: rotateY(0deg);"></div>
+      </div> 
+      <div class="cards card02">
+       <div class="face back card-1" style="transform: rotateY(0deg);"></div>
+      </div>
+     </div>
+    </div> 
+    <div class="cardOver" style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+     <!---->
+     <div style="display: none;">
+      <div class="cards card2 card211" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card2 cardundefined"></div>
+      </div> 
+      <div class="cards card2 card221" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card2 card231" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card3 card311" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card3 cardundefined"></div>
+      </div> 
+      <div class="cards card3 card321" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card3 card331" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card4 card411" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card4 cardundefined"></div>
+      </div> 
+      <div class="cards card4 card421" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card4 card431" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card5 card511" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card5 cardundefined"></div>
+      </div> 
+      <div class="cards card5 card521" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card5 card531" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card6 card611" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card6 cardundefined"></div>
+      </div> 
+      <div class="cards card6 card621" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card6 card631" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card7 card711" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card7 cardundefined"></div>
+      </div> 
+      <div class="cards card7 card721" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card7 card731" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card8 card811" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card8 cardundefined"></div>
+      </div> 
+      <div class="cards card8 card821" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card8 card831" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+     <div style="display: none;">
+      <div class="cards card9 card911" style="z-index: 14;">
+       <div class="face front"></div> 
+       <div class="face back card9 cardundefined"></div>
+      </div> 
+      <div class="cards card9 card921" style="z-index: 13;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div> 
+      <div class="cards card9 card931" style="z-index: 12;">
+       <div class="face front"></div> 
+       <div class="face back cardundefined"></div>
+      </div>
+     </div>
+    </div> 
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----> 
+    <!---->
+    <div class="memberFreeRobText2" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText3" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText4" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText5" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText6" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText7" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText8" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberFreeRobText9" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div> 
+    <!---->
+    <div class="memberGoTimesText2" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText3" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText4" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText5" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText6" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText7" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText8" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberGoTimesText9" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div> 
+    <div class="memberTimesText1" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div> 
+    <!---->
+    <div class="memberTimesText2" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText3" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText4" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText5" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText6" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText7" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText8" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText9" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div> 
+    <div class="memberTimesText1" style="display: none;">
+     <img src="img/X-1.png" style="position: absolute; width: 100%;" />
+    </div> 
+    <!---->
+    <div class="memberTimesText2" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText3" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText4" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText5" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText6" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText7" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText8" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div>
+    <div class="memberTimesText9" style="display: none;">
+     <img src="" style="position: absolute; width: 100%;" />
+    </div> 
+    <div class="memberBull1" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull2" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull3" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull4" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull5" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull6" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull7" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull8" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div>
+    <div class="memberBull9" style="display: none;">
+     <img src="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" />
+    </div> 
+    <div class="memberScoreText1" style="display: none;">
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div> 
+    <!---->
+    <div class="memberScoreText2" style="display: none;">
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</p> 
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</p> 
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</p>
+    </div>
+    <div class="memberScoreText3" style="display: none;">
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</p> 
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</p> 
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</p>
+    </div>
+    <div class="memberScoreText4" style="display: none;">
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</p> 
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</p> 
+     <p style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: right; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</p>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!----> 
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div class="memberScoreText7" style="display: none;">
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div>
+    <div class="memberScoreText8" style="display: none;">
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div>
+    <div class="memberScoreText9" style="display: none;">
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 4vh; height: 4vh; text-align: left; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div> 
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div class="memberScoreText5" style="display: none;">
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div>
+    <div class="memberScoreText6" style="display: none;">
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: white; font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(2, 32, 85) 1px 2px 2px; display: none;">0</label> 
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">+0</label> 
+     <label style="position: absolute; line-height: 4vh; width: 100%; height: 4vh; text-align: center; color: rgb(234, 171, 55); font-size: 3vh; font-family: &quot;Helvetica 微软雅黑&quot;; -webkit-text-stroke: 1.3px; text-shadow: rgb(120, 42, 0) 1px 2px 2px; display: none;">0</label>
+    </div>
+    <!---->
+    <!---->
+    <!----> 
+    <div class="member member1">
+     <img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM4F6XvlMOsT3CjSsbTX5ktibAbtPg24wAhVTUEVkR5iciaPg/0" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;">
+       　　　　　　
+      </div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker213612" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate1" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate11" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack" style="display: none;"></div>
+    </div> 
+    <div class="member member1" style="display: none;">
+     <img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM4F6XvlMOsT3CjSsbTX5ktibAbtPg24wAhVTUEVkR5iciaPg/0" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;">
+       　　　　　　
+      </div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker213612" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate1" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate11" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack" style="display: none;"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member2" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate2" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate12" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member3" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate3" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate13" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member4" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate4" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate14" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member5" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate5" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate15" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member6" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate6" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate16" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member7" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate7" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate17" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member8" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate8" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate18" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div>
+    <div class="member member9" style="display: none;">
+     <img src="" class="avatar" /> 
+     <img src="img/sangong9/playerWin.png" class="banker" style="display: none;" /> 
+     <div class="bottom" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; overflow: hidden;">
+      <div class="bname" style="text-align: center; overflow: hidden;"></div> 
+      <div class="bscore" style="text-align: center; overflow: hidden;">
+       0
+      </div>
+     </div> 
+     <img id="banker0" src="img/sangong9/bull_banker_bg.png" class="background" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img src="img/sangong9/bull_banker_icon.png" class="background" style="position: absolute; top: -6%; left: -6%; width: 2.6vh; height: 2.6vh; display: none;" /> 
+     <img id="bankerAnimate9" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <img id="bankerAnimate19" src="img/sangong9/bull_banker_animate.png" style="position: absolute; top: -0.2vh; left: -0.2vh; width: 7.86vh; height: 7.86vh; display: none;" /> 
+     <div class="quitBack"></div> 
+     <div class="isReady">
+      <img src="img/sangong9/readyButton.png" class="unready" style="display: none;" /> 
+      <img src="img/sangong9/ready.png" class="ready" style="display: none;" />
+     </div>
+    </div> 
+    <div id="playerCoins" style="display: none;">
+     <div>
+      <div class="memberCoin memberCoin10">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin11">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin12">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin13">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin14">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin15">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin16">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin17">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin20">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin21">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin22">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin23">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin24">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin25">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin26">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin27">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin30">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin31">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin32">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin33">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin34">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin35">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin36">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin37">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin40">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin41">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin42">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin43">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin44">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin45">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin46">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin47">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin50">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin51">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin52">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin53">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin54">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin55">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin56">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin57">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin60">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin61">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin62">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin63">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin64">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin65">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin66">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin67">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin70">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin71">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin72">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin73">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin74">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin75">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin76">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin77">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin80">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin81">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin82">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin83">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin84">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin85">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin86">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin87">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+     <div>
+      <div class="memberCoin memberCoin90">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin91">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin92">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin93">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin94">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin95">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin96">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+      <div class="memberCoin memberCoin97">
+       <img src="img/sangong9/bull_coin.png" style="position: absolute; width: 100%; height: 100%;" />
+      </div>
+     </div>
+    </div> 
+    <div>
+     <div class="messageSay messageSay1" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay2" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay3" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay4" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay5" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay6" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay7" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay8" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div>
+    <div>
+     <div class="messageSay messageSay9" style="display: none;">
+      <div>
+       我们来血拼吧
+      </div> 
+      <div class="triangle"></div>
+     </div>
+    </div> 
+    <div id="divRobBankerText" style="position: absolute; top: 33%; left: 0px; width: 400px; height: 30px; display: none;">
+     <p style="color: white; font-size: 2vh; width: 100%; height: 30px; line-height: 30px; text-align: center; font-family: &quot;Helvetica 微软雅黑&quot;;">抢庄</p>
+    </div> 
+    <div id="divBetText" style="position: absolute; top: 33%; left: 0px; width: 400px; height: 30px; display: none;">
+     <p style="color: white; font-size: 2vh; width: 100%; height: 30px; line-height: 30px; text-align: center; font-family: &quot;Helvetica 微软雅黑&quot;;">闲家下注</p>
+    </div> 
+    <div id="divBetText" style="position: absolute; top: 33.5%; left: 0px; width: 400px; height: 30px; display: none;">
+     <p style="color: white; font-size: 2vh; width: 100%; height: 30px; line-height: 30px; text-align: center; font-family: &quot;Helvetica 微软雅黑&quot;;">等待摊牌</p>
+    </div> 
+    <div id="" class="clock" style="position: absolute; top: 38%; left: 180px; width: 40px; height: 42px; display: none;">
+     <img src="img/sangong9/bull_clock.png" style="position: absolute; width: 100%; height: 100%;" /> 
+     <p style="position: absolute; top: 0px; left: 0px; width: 40px; height: 42px; color: white; text-align: center; line-height: 42px;"> -1 </p>
+    </div> 
+    <div id="operationButton" style="position: absolute; top: 68%; left: 5%; width: 90%; height: 11vh; overflow: hidden;">
+     <div style="position: absolute; top: 50%; left: 50%; width: 6vh; height: 3vh; margin-top: -1.5vh; margin-left: -3vh;">
+      <img src="img/sangong9/ready.png" style="position: absolute; width: 100%; height: 100%; display: none;" />
+     </div> 
+     <div style="position: absolute;top: 21.175px;left: 0;right: 0;width: 14vh;height: 5vh;margin: auto;">
+      <img src="img/sangong9/readyButton.png" style="position: absolute; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 100%; height: 100%;"></div>
+     </div> 
+     <div style="position: absolute;top: 3vh;left: 11.4vh;width: 14.1vh;height: 5.2vh;display: none;">
+      <img src="img/sangong9/bull_button_orange.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       抢庄
+      </div>
+     </div> 
+     <div style="position: absolute;top: 3vh;left: 28.4vh;width: 14.1vh;height: 5.2vh;display: none;">
+      <img src="img/sangong9/bull_button_blue.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       不抢
+      </div>
+     </div> 
+     <div style="position: absolute;top: 3vh;left: 11.4vh;width: 14.1vh;height: 5.2vh;display: none;">
+      <img src="img/sangong9/bull_button_orange.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       上庄
+      </div>
+     </div> 
+     <div style="position: absolute;top: 3vh;left: 28.4vh;width: 14.1vh;height: 5.2vh;display: none;">
+      <img src="img/sangong9/bull_button_blue.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       不上庄
+      </div>
+     </div> 
+     <div style="position: absolute;top: 3vh;left: 11.4vh;width: 14.1vh;height: 5.2vh;display: none;">
+      <img src="img/sangong9/bull_button_blue.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       下庄
+      </div>
+     </div> 
+     <div style="position: absolute;top: 3vh;left: 28.4vh;width: 14.1vh;height: 5.2vh;display: none;">
+      <img src="img/sangong9/bull_button_orange.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       准备
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;top: 3.5vh;left: 6.5vh;width: 9vh;height: 4.6vh;line-height: 4.6vh;display: none;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 9vh; height: 4.6vh; line-height:4.6vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       1倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;width: 9vh;height: 4.6vh;line-height: 4.6vh;top: 3.5vh;left: 17vh;display: none;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width:  9vh; height:  4.6vh; line-height:  4.6vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       2倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;left: 27.5vh;width: 9vh;height: 4.6vh;line-height: 4.6vh;top: 3.5vh; display: none;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 9vh; height: 4.6vh; line-height: 4.6vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       4倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;left: 38.3vh;width: 9vh;height: 4.6vh;line-height: 4.6vh;top: 3.5vh; display: none;">
+      <img src="img/sangong9/bull_times_bg_blue.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width:9vh; height: 4.6vh; line-height:4.6vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       不抢
+      </div>
+     </div> 
+     <div id="showShowCardButton" style="position: absolute;top: 3vh;left: 0;right: 0;display: none;width: 14.1vh;height: 5.2vh;line-height: 5.2vh;margin: auto;">
+      <img src="img/sangong9/bull_button_blue.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; top: 0px; left: 0px; width:14.1vh; height:5.2vh; line-height:5.2vh; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       摊牌
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;top: 23.1px;left: 6.5vh;width: 9vh;height: 4.6vh;line-height: 4.6vh;display: none;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 61.6px; height: 30.8px; line-height: 30.8px; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       1倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;width: 9vh;height: 4.6vh;line-height: 4.6vh;top: 3.5vh;left: 17.4vh;display: none;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 61.6px; height: 30.8px; line-height: 30.8px; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       2倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;left: 27.5vh;width: 9vh;height: 4.6vh;line-height: 4.6vh;top: 3.5vh; display: none;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 61.6px; height: 30.8px; line-height: 30.8px; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       4倍
+      </div>
+     </div> 
+     <div class="divCoin" style="position: absolute;left: 38.3vh; display: none;width: 9vh;height: 4.6vh;line-height: 4.6vh;top: 3.5vh;">
+      <img src="img/sangong9/bull_times_bg1.png" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" /> 
+      <div style="position: absolute; width: 61.6px; height: 30.8px; line-height: 30.8px; text-align: center; color: white; font-size: 2.2vh; font-weight: bold;">
+       5倍
+      </div>
+     </div> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <!----> 
+     <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 11vh; font-size: 2.2vh; display: none;">
+      <p style="position: absolute; width: 100%; height: 100%; color: white; font-size: 2.2vh; text-align: center; line-height: 11vh; font-family: &quot;Helvetica 微软雅黑&quot;;">等待闲家下注</p>
+     </div> 
+     <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 11vh; font-size: 2.2vh; display: none;">
+      <p style="position: absolute; width: 100%; height: 100%; color: white; font-size: 2.2vh; text-align: center; line-height: 11vh; font-family: &quot;Helvetica 微软雅黑&quot;;">点击牌面看牌</p>
+     </div>
+    </div>
+   </div> 
+   <div id="ranking" class="ranking hideRanking" style="z-index: 1; width: 800px; height: 1296.8px;">
+    <div class="rankBack">
+     <img src="http://goss.fexteam.com/files/d_30/images/sangong9/rank_bg.jpg" style="position: absolute; top: 0px; left: 0px; width: 100%;" />
+    </div> 
+    <div class="rankText" style="position: absolute; top: 4%;">
+     <img src="http://goss.fexteam.com/files/d_30/images/sangong9/rank_frame92.png" style="position: absolute; top: 0%; left: 30vw; width: 140vw;" /> 
+     <div class="time" style="position: absolute; top: 44vw; width: 100%; display: none;">
+      <a style="font-size: 6vw; padding: 1vw 8vw; border-radius: 6vw; background: rgb(6, 73, 67); border: 2px solid rgb(119, 255, 232);">房间号:46860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12局</a>
+     </div> 
+     <div style="height: 64vw;"></div> 
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+     <div class="scoresItem scoresItemWhite" style="display: none;">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/rank_bigwinner2.png" style="top: 0px; margin-top: -2.5vw; left: 4px; height: 100%; display: none;" /> 
+      <div class="name"></div> 
+      <div class="currentScores">
+       <a style="display: none;">+</a>0
+      </div>
+     </div>
+    </div> 
+    <div class="button roundEndShow">
+     <img src="http://goss.fexteam.com/files/images/common/long_save.png" style="float: left; width: 30%; margin-left: 13%;" /> 
+     <img src="http://goss.fexteam.com/files/images/common/score_search1.png" style="float: right; width: 30%; margin-right: 14%;" />
+    </div>
+   </div> 
+   <div class="message" style="display: none;">
+    <div class="messageBack" style="z-index: 999;"></div> 
+    <div class="textPartOuter" style="z-index: 999;"></div> 
+    <div id="message-box" class="textPart" style="height: 273px; z-index: 999;">
+     <div id="scroll-box" class="textList" style="width: 100%;">
+      <div class="textItem">
+       玩游戏，请先进群
+      </div>
+      <div class="textItem">
+       群内游戏，切勿转发
+      </div>
+      <div class="textItem">
+       别磨蹭，快点打牌
+      </div>
+      <div class="textItem">
+       我出去叫人
+      </div>
+      <div class="textItem">
+       你的牌好靓哇
+      </div>
+      <div class="textItem">
+       我当年横扫澳门五条街
+      </div>
+      <div class="textItem">
+       算你牛逼
+      </div>
+      <div class="textItem">
+       别跟我抢庄
+      </div>
+      <div class="textItem">
+       输得裤衩都没了
+      </div>
+      <div class="textItem">
+       我给你们送温暖了
+      </div>
+      <div class="textItem">
+       谢谢老板
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div id="endCreateRoom" class="end" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 120; display: none;">
+    <img src="" id="end" usemap="#planetmap1" style="width: 100vw; position: absolute; top: 0px; left: 0px; height: 100vh;" /> 
+    <div id="endCreateRoomBtn" style="position: absolute; right: 13vw; width: 33vw; height: 9.6vw; bottom: 8%; z-index: 121; overflow: hidden;"></div>
+   </div> 
+   <div id="vshop" style="display: none;">
+    <div class="shop">
+     <div class="shopBack"></div> 
+     <div class="shopBody">
+      <div style="position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;">
+       <img src="http://goss.fexteam.com/files/d_25/images/shop/title.png" style="width: 100%; position: relative; z-index: 1;" /> 
+       <img src="http://goss.fexteam.com/files/d_25/images/shop/body.jpg" style="width: 100%; margin-top: -20px; position: relative; border-radius: 15px 15px 0px 0px;" />
+      </div> 
+      <img src="http://goss.fexteam.com/files/d_25/images/shop/shop6.png" class="shopReturn" /> 
+      <img src="http://goss.fexteam.com/files/d_25/images/shop/shop5.png" class="shopBuy" style="display: none;" />
+     </div> 
+     <div class="shopLoading" style="display: none;">
+      <div style="width: 100%; position: absolute; left: 0px; top: 0px; height: 100%; background: rgb(0, 0, 0); opacity: 0.6;"></div> 
+      <img src="http://goss.fexteam.com/files/d_25/images/coffee/loading.gif" style="width: 80px; height: 80px; margin-left: -40px; position: absolute; left: 50%; top: 40%;" />
+     </div>
+    </div>
+   </div> 
+   <div id="vcreateRoom" class="createRoom" style="display: none;">
+    <div class="createRoomBack"></div> 
+    <div class="mainPart">
+     <div class="createB"></div> 
+     <div class="createTitle">
+      <img src="http://goss.fexteam.com/files/d_25/images/common/createroom2.png" />
+     </div> 
+    
+    </div>
+   </div> 
+  
+  
+  
+   <div class="alert" style="display: none;">
+    <div class="alertBack"></div> 
+    <img src="http://goss.fexteam.com/files/images/common/note.png" style="position: absolute; top: 20vh; width: 90vw; left: 5vw;" />
+   </div> 
+   <div id="vplayRule" class="ruleRoom" style="z-index: 120; display: none;">
+    <div style="width: 100%; text-align: center;">
+     <img src="http://goss.fexteam.com/files/d_10/images/sangong/ruleImg.png" style="height: 100%; max-width: 100%;" />
+    </div>
+   </div>
+  </div> 
+ </body>
+</html>

@@ -1,0 +1,9 @@
+[ 2018-10-31T23:41:55+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [8] Undefined index: uid /home/liguofa/project/newweb/application/Common/Controller/HomebaseController.class.php 第 20 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'niuniu'@'localhost' (using password: YES)
+

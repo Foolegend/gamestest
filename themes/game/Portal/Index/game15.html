@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <title>十人(房间:{$room.roomid})</title>
+    <meta name="apple-mobile-web-app-title" content="大圣娱乐大厅" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="/app/css/dasheng10.css" rel="stylesheet" />
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/app/js/dasheng10niu.js"></script>
+    <script src="/app/js/fastclick.js" type="text/javascript"></script>
+    <script src="/app/js/homepage/home.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/app/js/base64.js"></script>
+    <script src="/app/js/dashengapp.js" type="text/javascript"></script>
+    <script src="/app/js/game15.js" type="text/javascript"></script>
+</head>
+<body>
+
+<audio onended="mp3playandpause('1miao');" id="1miao" src="/app/video/1miao.mp3"></audio>
+<!--sex1-->
+<audio onended="mp3playandpause('mp3niu10');" id="mp3niu10" src="/app/video/bull10/sound_1_60.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu11');" id="mp3niu11" src="/app/video/bull10/sound_1_61.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu12');" id="mp3niu12" src="/app/video/bull10/sound_1_62.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu13');" id="mp3niu13" src="/app/video/bull10/sound_1_63.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu14');" id="mp3niu14" src="/app/video/bull10/sound_1_64.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu15');" id="mp3niu15" src="/app/video/bull10/sound_1_65.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu16');" id="mp3niu16" src="/app/video/bull10/sound_1_66.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu17');" id="mp3niu17" src="/app/video/bull10/sound_1_67.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu18');" id="mp3niu18" src="/app/video/bull10/sound_1_68.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu19');" id="mp3niu19" src="/app/video/bull10/sound_1_69.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu110');" id="mp3niu110" src="/app/video/bull10/sound_1_70.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu111');" id="mp3niu111" src="/app/video/bull10/sound_1_71.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu112');" id="mp3niu112" src="/app/video/bull10/sound_1_72.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu113');" id="mp3niu113" src="/app/video/bull10/sound_1_73.mp3"></audio>
+
+<!--sex2-->
+<audio onended="mp3playandpause('mp3niu20');" id="mp3niu20" src="/app/video/bull10/sound_2_60.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu21');" id="mp3niu21" src="/app/video/bull10/sound_2_61.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu22');" id="mp3niu22" src="/app/video/bull10/sound_2_62.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu23');" id="mp3niu23" src="/app/video/bull10/sound_2_63.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu24');" id="mp3niu24" src="/app/video/bull10/sound_2_64.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu25');" id="mp3niu25" src="/app/video/bull10/sound_2_65.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu26');" id="mp3niu26" src="/app/video/bull10/sound_2_66.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu27');" id="mp3niu27" src="/app/video/bull10/sound_2_67.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu28');" id="mp3niu28" src="/app/video/bull10/sound_2_68.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu29');" id="mp3niu29" src="/app/video/bull10/sound_2_69.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu210');" id="mp3niu210" src="/app/video/bull10/sound_2_70.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu211');" id="mp3niu211" src="/app/video/bull10/sound_2_71.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu212');" id="mp3niu212" src="/app/video/bull10/sound_2_72.mp3"></audio>
+<audio onended="mp3playandpause('mp3niu213');" id="mp3niu213" src="/app/video/bull10/sound_2_73.mp3"></audio>
+
+<audio onended="mp3playandpause('mp3daojishi');" id="mp3daojishi" src="/app/video/daojishi.mp3"></audio>
+<audio onended="mp3playandpause('mp3gold');" id="mp3gold" src="/app/video/bull10/gold.mp3"></audio>
+<audio onended="mp3playandpause('mp3kaiju');" id="mp3kaiju" src="/app/video/kaiju.mp3"></audio>
+<audio onended="mp3playandpause('mp3xiazhu');" id="mp3xiazhu" src="/app/video/xiazhu.mp3"></audio>
+<audio onended="mp3playandpause('fapai');" id="fapai" src="/app/video/bull10/tenoxen_sound_101.mp3"></audio>
+
+<!--sex1-->
+<audio onended="mp3playandpause('message11');" id="message11" src="/app/video/bull10/sound_1_0.mp3"></audio>
+<audio onended="mp3playandpause('message12');" id="message12" src="/app/video/bull10/sound_1_1.mp3"></audio>
+<audio onended="mp3playandpause('message13');" id="message13" src="/app/video/bull10/sound_1_2.mp3"></audio>
+<audio onended="mp3playandpause('message14');" id="message14" src="/app/video/bull10/sound_1_3.mp3"></audio>
+<audio onended="mp3playandpause('message15');" id="message15" src="/app/video/bull10/sound_1_4.mp3"></audio>
+<audio onended="mp3playandpause('message16');" id="message16" src="/app/video/bull10/sound_1_5.mp3"></audio>
+<audio onended="mp3playandpause('message17');" id="message17" src="/app/video/bull10/sound_1_6.mp3"></audio>
+<audio onended="mp3playandpause('message18');" id="message18" src="/app/video/bull10/sound_1_7.mp3"></audio>
+<audio onended="mp3playandpause('message19');" id="message19" src="/app/video/bull10/sound_1_8.mp3"></audio>
+<audio onended="mp3playandpause('message110');" id="message110" src="/app/video/bull10/sound_1_9.mp3"></audio>
+<audio onended="mp3playandpause('message111');" id="message111" src="/app/video/bull10/sound_1_10.mp3"></audio>
+<audio onended="mp3playandpause('message112');" id="message112" src="/app/video/bull10/sound_1_11.mp3"></audio>
+<audio onended="mp3playandpause('message113');" id="message113" src="/app/video/bull10/sound_1_12.mp3"></audio>
+
+<!--sex2-->
+<audio onended="mp3playandpause('message21');" id="message21" src="/app/video/bull10/sound_2_0.mp3"></audio>
+<audio onended="mp3playandpause('message22');" id="message22" src="/app/video/bull10/sound_2_1.mp3"></audio>
+<audio onended="mp3playandpause('message23');" id="message23" src="/app/video/bull10/sound_2_2.mp3"></audio>
+<audio onended="mp3playandpause('message24');" id="message24" src="/app/video/bull10/sound_2_3.mp3"></audio>
+<audio onended="mp3playandpause('message25');" id="message25" src="/app/video/bull10/sound_2_4.mp3"></audio>
+<audio onended="mp3playandpause('message26');" id="message26" src="/app/video/bull10/sound_2_5.mp3"></audio>
+<audio onended="mp3playandpause('message27');" id="message27" src="/app/video/bull10/sound_2_6.mp3"></audio>
+<audio onended="mp3playandpause('message28');" id="message28" src="/app/video/bull10/sound_2_7.mp3"></audio>
+<audio onended="mp3playandpause('message29');" id="message29" src="/app/video/bull10/sound_2_8.mp3"></audio>
+<audio onended="mp3playandpause('message210');" id="message210" src="/app/video/bull10/sound_2_9.mp3"></audio>
+<audio onended="mp3playandpause('message211');" id="message211" src="/app/video/bull10/sound_2_10.mp3"></audio>
+<audio onended="mp3playandpause('message212');" id="message212" src="/app/video/bull10/sound_2_11.mp3"></audio>
+<audio onended="mp3playandpause('message213');" id="message213" src="/app/video/bull10/sound_2_12.mp3"></audio>
+
+<audio onended="mp3playandpause('background');" id="background" src="/app/video/background.mp3" ></audio>
+<!--下注抢庄-->
+<!--sex1-->
+<audio onended="mp3playandpause('xia11');" id="xia11" src="/app/video/bull10/sound_1x1.mp3"></audio>
+<audio onended="mp3playandpause('xia12');" id="xia12" src="/app/video/bull10/sound_1x2.mp3"></audio>
+<audio onended="mp3playandpause('xia13');" id="xia13" src="/app/video/bull10/sound_1x3.mp3"></audio>
+<audio onended="mp3playandpause('xia14');" id="xia14" src="/app/video/bull10/sound_1x4.mp3"></audio>
+<audio onended="mp3playandpause('xia15');" id="xia15" src="/app/video/bull10/sound_1x5.mp3"></audio>
+<audio onended="mp3playandpause('qiangzhuang1');" id="qiangzhuang1" src="/app/video/bull10/sound_1_98.mp3"></audio>
+<audio onended="mp3playandpause('buqiang1');" id="buqiang1" src="/app/video/bull10/sound_1_99.mp3"></audio>
+
+<!--sex2-->
+<audio onended="mp3playandpause('xia21');" id="xia21" src="/app/video/bull10/sound_2x1.mp3"></audio>
+<audio onended="mp3playandpause('xia22');" id="xia22" src="/app/video/bull10/sound_2x2.mp3"></audio>
+<audio onended="mp3playandpause('xia23');" id="xia23" src="/app/video/bull10/sound_2x3.mp3"></audio>
+<audio onended="mp3playandpause('xia24');" id="xia24" src="/app/video/bull10/sound_2x4.mp3"></audio>
+<audio onended="mp3playandpause('xia25');" id="xia25" src="/app/video/bull10/sound_2x5.mp3"></audio>
+<audio onended="mp3playandpause('qiangzhuang2');" id="qiangzhuang2" src="/app/video/bull10/sound_2_98.mp3"></audio>
+<audio onended="mp3playandpause('buqiang2');" id="buqiang2" src="/app/video/bull10/sound_2_99.mp3"></audio>
+<script type="text/javascript">
+    window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
+    var context = new (window.AudioContext || window.webkitAudioContext)();
+    var source = [];
+    var audioBuffer = [];
+
+    function mp3play(id){
+        if(id!='background' &&　mp3open==2){
+            return false;
+        }
+        //document.getElementById(id).play();
+        if(!audioBuffer[id]){
+            loadAudioFile(id);
+        }
+        if(source[id]){
+            if(typeof(source[id].stop)=='function' && id == "background"){
+                source[id].stop();
+            }
+            source[id]=null;
+        }
+        if(typeof(WeixinJSBridge) != "undefined") {
+            WeixinJSBridge.invoke('getNetworkType', {},
+                function (e) {
+                    _play();
+                });
+        } else {
+            _play();
+        }
+        function _play() {
+            source[id] = context.createBufferSource();
+            source[id].buffer = audioBuffer[id];
+            if(id=='background'){
+                source[id].loop = true;
+            }
+            else{
+                source[id].loop = false;
+            }
+            source[id].connect(context.destination);
+            source[id].start(0); //立即播放
+        }
+    }
+    function mp3pause(id){
+        //document.getElementById(id).pause();
+        if (source[id]) {
+            source[id].loop = false;
+            source[id].stop(); //立即停止
+            source[id]=null;
+        }
+    }
+
+    function mp3playandpause(id){
+        mp3play(id);
+        mp3pause(id);
+    }
+
+
+    function initSound(arrayBuffer,id) {
+        context.decodeAudioData(arrayBuffer, function(buffer) { //解码成功时的回调函数
+            audioBuffer[id] = buffer;
+            if(bgmp3open==1 && id == 'background') {
+                mp3play('background');
+            }
+        }, function(e) { //解码出错时的回调函数
+            console.log('Error decoding file '+id, e);
+        });
+    }
+
+
+    function loadAudioFile(id) {
+        var url=$('#'+id).attr('src');
+        var xhr = new XMLHttpRequest(); //通过XHR下载音频文件
+        xhr.open('GET', url, true);
+        xhr.responseType = 'arraybuffer';
+        xhr.onload = function(e) { //下载完成
+            initSound(this.response,id);
+        };
+        xhr.send();
+    }
+
+
+    function audioAutoPlay(id){
+        loadAudioFile(id);
+    }
+
+    function muiscready(){
+        audioAutoPlay('mp3niu10');
+        audioAutoPlay('mp3niu11');
+        audioAutoPlay('mp3niu12');
+        audioAutoPlay('mp3niu13');
+        audioAutoPlay('mp3niu14');
+        audioAutoPlay('mp3niu15');
+        audioAutoPlay('mp3niu16');
+        audioAutoPlay('mp3niu17');
+        audioAutoPlay('mp3niu18');
+        audioAutoPlay('mp3niu19');
+        audioAutoPlay('mp3niu110');
+        audioAutoPlay('mp3niu111');
+        audioAutoPlay('mp3niu112');
+        audioAutoPlay('mp3niu113');
+
+        audioAutoPlay('mp3niu20');
+        audioAutoPlay('mp3niu21');
+        audioAutoPlay('mp3niu22');
+        audioAutoPlay('mp3niu23');
+        audioAutoPlay('mp3niu24');
+        audioAutoPlay('mp3niu25');
+        audioAutoPlay('mp3niu26');
+        audioAutoPlay('mp3niu27');
+        audioAutoPlay('mp3niu28');
+        audioAutoPlay('mp3niu29');
+        audioAutoPlay('mp3niu210');
+        audioAutoPlay('mp3niu211');
+        audioAutoPlay('mp3niu212');
+        audioAutoPlay('mp3niu213');
+
+        audioAutoPlay('background');
+
+        audioAutoPlay('mp3daojishi');
+        audioAutoPlay('mp3gold');
+        audioAutoPlay('mp3kaiju');
+        audioAutoPlay('mp3xiazhu');
+
+        audioAutoPlay('fapai');
+
+
+
+        audioAutoPlay('message11');
+        audioAutoPlay('message12');
+        audioAutoPlay('message13');
+        audioAutoPlay('message14');
+        audioAutoPlay('message15');
+        audioAutoPlay('message16');
+        audioAutoPlay('message17');
+        audioAutoPlay('message18');
+        audioAutoPlay('message19');
+        audioAutoPlay('message110');
+        audioAutoPlay('message111');
+        audioAutoPlay('message112');
+        audioAutoPlay('message113');
+
+        audioAutoPlay('message21');
+        audioAutoPlay('message22');
+        audioAutoPlay('message23');
+        audioAutoPlay('message24');
+        audioAutoPlay('message25');
+        audioAutoPlay('message26');
+        audioAutoPlay('message27');
+        audioAutoPlay('message28');
+        audioAutoPlay('message29');
+        audioAutoPlay('message210');
+        audioAutoPlay('message211');
+        audioAutoPlay('message212');
+        audioAutoPlay('message213');
+
+
+        audioAutoPlay('xia11');
+        audioAutoPlay('xia12');
+        audioAutoPlay('xia13');
+        audioAutoPlay('xia14');
+        audioAutoPlay('xia15');
+        audioAutoPlay('qiangzhuang1');
+        audioAutoPlay('buqiang1');
+
+
+        audioAutoPlay('xia21');
+        audioAutoPlay('xia22');
+        audioAutoPlay('xia23');
+        audioAutoPlay('xia24');
+        audioAutoPlay('xia25');
+        audioAutoPlay('qiangzhuang2');
+        audioAutoPlay('buqiang2');
+        if(bgmp3open==1){
+            setTimeout(function(){
+                //mp3pause('background');
+                //mp3play('background');
+            },2000);
+            mp3open=1;
+            $("#sound-open").css("display", "block");
+            $("#sound-close").css("display", "none");
+        }
+        if(bgmp3open==2){
+            mp3pause('background');
+            mp3open=2;
+            $("#sound-open").css("display", "none");
+            $("#sound-close").css("display", "block");
+        }
+        $("#sound-close").click(function (e) {
+            $(this).css('display', "none");
+            $("#sound-open").css("display", "block");
+            mp3play('background');
+            bgmp3open=1;
+            mp3open=1;
+            localStorage.bgmp3open=bgmp3open;
+        });
+        $("#sound-open").click(function (e) {
+            $(this).css('display', "none");
+            $("#sound-close").css("display", "block");
+            mp3pause('background');
+            bgmp3open=2;
+            mp3open=2;
+            localStorage.bgmp3open=bgmp3open;
+        });
+    }
+    $(function () {
+        muiscready();
+    });
+</script>
+
+<if condition="count($room['userlist']) egt 10 && $room['userlist'][$user['id']] neq 1">
+    <script type="text/javascript">
+        alert2('房间人数已经满', function () {
+            wx.closeWindow();
+        });
+    </script>
+
+    <php>
+        exit();
+    </php>
+</if>
+
+<div id="loadings" style="position:fixed;top:0;right:0;bottom:0;left:0;background:#fff;z-index:999;font-size:16px;">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+    <div class="loadings-text">
+        页面加载中
+        <span data-item="1">.</span>
+        <span data-item="2">.</span>
+        <span data-item="3">.</span>
+    </div>
+</div>
+<div id="networkReconnect" style="position: fixed; width:2.88rem; line-height:.2rem; font-size:.1rem; left:.36rem; text-align: center; bottom:45%; background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0)); color:#fff; display:none; z-index:9999;">
+    您的网络已断开，我们正在尝试重连...
+</div>
+<div class="body">
+    <div class="user-card hide-card show-card" data-pos="0" data-item="0">
+        <div class="cardbox hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="1" data-item="1">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="2" data-item="2">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="3" data-item="3">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="4" data-item="4">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="5" data-item="5">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="6" data-item="6">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="7" data-item="7">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="8" data-item="8">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="user-card hide-card show-card" data-pos="9" data-item="9">
+        <div class="cardbox card-small hind" data-item="0">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="1">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="2">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="3">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+        <div class="cardbox card-small hind" data-item="4">
+            <span class="card" data-value="" data-color=""></span>
+            <span class="card-bg"></span>
+        </div>
+    </div>
+    <div class="top flex-cont">
+        <div class="left">
+            <img src="https://cdn-1255620552.file.myqcloud.com/images/index/room-card1.png" /><span>0</span>
+        </div>
+        <div class="flex-item" id="jsxx">
+            <span>{$room.js}</span>/<span>{$room.zjs}</span>局
+        </div>
+        <div class="right">
+            <div class="rules-focus">
+                <span class="rules"></span>
+                <span class="return-index"></span>
+                <span class="game-tips"></span>
+            </div>
+        </div>
+    </div>
+    <div class="rules-mask">
+        <div class="content">
+            <div class="niuniu-rules">
+                <div class="flex-cont rules-title">
+                    规则
+                </div>
+                <div class="flex-cont" data-pos="0">
+                    <div class="name">
+                        模式：
+                    </div>
+                    <div class="flex-item">{$room['wfname']}</div>
+                </div>
+
+                <div class="flex-cont" data-pos="1">
+                    <div class="name">
+                        底分：
+                    </div>
+                    <div class="flex-item">{$room['df']}</div>
+                </div>
+                <if condition="$room['gz']">
+                <div class="flex-cont" data-pos="2">
+                    <div class="name">
+                        规则：
+                    </div>
+                    <div class="flex-item">{$room['gz']}</div>
+                </div>
+                </if>
+                <if condition="$room['px']">
+                <div class="flex-cont rules-item" data-pos="3">
+                    <div class="name">
+                        牌型：
+                    </div>
+                    <div class="flex-item">牛.牛</div>
+                </div>
+                </if>
+                <div class="flex-cont" data-pos="4">
+                    <div class="name">
+                        局数：
+                    </div>
+                    <div class="flex-item">{$room['zjs']}局X{$room['fk']}房卡</div>
+                </div>
+                <if condition="$room['sz']">
+                <div class="flex-cont" data-pos="5">
+                    <div class="name">
+                        上庄：
+                    </div>
+                    <div class="flex-item">{$room['sz']}</div>
+                </div>
+                </if>
+                <div class="flex-cont rules-title">
+                    玩法
+                </div>
+                <div class="rules-text">
+                    <p>1、牌面数值：10，J，Q，K都为10，其他按牌面数字计算。</p>
+                    <p>2、取其中三张牌数值相加，如果和是10的倍数，则剩余2张牌相加之和取个位数即为牛X， 如：4/9/8/7/K，(4+7+9=20)(K+8=18)，此牌型为牛八。如果剩余2张牌相加之和也是10的倍数即为牛.牛的牌型。如4/9/7/J/Q，J+Q=20，则为牛.牛。</p>
+                    <p>3、五小牛：所有牌均小于5，点数总和小于等于10；炸弹牛：有四张相同的牌；五花牛：5张牌均为JQK。</p>
+                    <p>4、5张牌中任意3张牌之和都不能为10的倍数，则判定为没牛。</p>
+                    <p>5、牌型大小顺序为：五小牛&gt;炸弹牛&gt;五花牛&gt;牛.牛&gt;牛九&gt;牛八&gt;牛七&gt;牛六&gt;牛五&gt;牛四&gt;牛三&gt;牛二&gt;牛一&gt;没牛。</p>
+                    <p>6、如果牛数相同，则比较五张手牌中最大的那张牌的大小，顺序为：K&gt;Q&gt;J......&gt;2&gt;A。</p>
+                    <p>7、如果牛数相同，最大那张牌的数字也相同，则比较花色，顺序为：黑桃&gt;红桃&gt;梅花&gt;方块。</p>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+    <div class="bottom">
+        <div class="points">
+            底分：
+            <span>{$room.df}</span>
+        </div>
+        <div class="music">
+            <img id="sound-close" src="https://cdn-1255620552.file.myqcloud.com/images/niuniu/game-music02.png" />
+            <img id="sound-open" src="https://cdn-1255620552.file.myqcloud.com/images/niuniu/game-music01.png" />
+        </div>
+        <div class="chat"></div>
+        <div class="chat-list-mask"></div>
+        <div class="chat-list">
+            <ul class="chat-list-ul">
+                <li data-item="0">快点吧，我等到花儿也谢了</li>
+                <li data-item="1">我出去叫人</li>
+                <li data-item="2">你的牌好靓哇</li>
+                <li data-item="3">我当年横扫澳门九条街</li>
+                <li data-item="4">算你牛逼</li>
+                <li data-item="5">别吹牛逼，有本事干到底</li>
+                <li data-item="6">输得裤衩都没了</li>
+                <li data-item="7">我给你们送温暖了</li>
+                <li data-item="8">谢谢老板</li>
+                <li data-item="9">我来啦，让你们久等了</li>
+                <li data-item="10">我出去一下，马上回来，等我哦</li>
+                <li data-item="11">怎么断线了，网络太差了</li>
+                <li data-item="12">搏一搏，单车变摩托</li>
+            </ul>
+        </div>
+    </div>
+    <div class="user-list"></div>
+    <div class="user-list-vacancy">
+        <div class="vacancy" data-item="0">
+            空位
+        </div>
+        <div class="vacancy" data-item="1">
+            空位
+        </div>
+        <div class="vacancy" data-item="2">
+            空位
+        </div>
+        <div class="vacancy" data-item="3">
+            空位
+        </div>
+        <div class="vacancy" data-item="4">
+            空位
+        </div>
+        <div class="vacancy" data-item="5">
+            空位
+        </div>
+        <div class="vacancy" data-item="6">
+            空位
+        </div>
+        <div class="vacancy" data-item="7">
+            空位
+        </div>
+        <div class="vacancy" data-item="8">
+            空位
+        </div>
+        <div class="vacancy" data-item="9">
+            空位
+        </div>
+    </div>
+    <div class="prepare-list">
+        <div class="prepare-item" data-pos="0">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="1">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="2">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="3">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="4">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="5">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="6">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="7">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="8">
+            准备
+        </div>
+        <div class="prepare-item" data-pos="9">
+            准备
+        </div>
+    </div>
+    <div class="prepare" onclick="zhunbei()">
+        准备
+    </div>
+    <div class="time"></div>
+    <div class="grabzhuang">
+        <input type="button" data-item="9" data-value="1" value="1倍" />
+        <input type="button" data-item="9" data-value="2" value="2倍" />
+        <input type="button" data-item="9" data-value="4" value="4倍" />
+        <input type="button" data-item="10" data-value="0" name="0" value="不抢" />
+    </div>
+    <div class="rob-zhuang-num">
+        <div class="item" data-pos="0"></div>
+        <div class="item" data-pos="1"></div>
+        <div class="item" data-pos="2"></div>
+        <div class="item" data-pos="3"></div>
+        <div class="item" data-pos="4"></div>
+        <div class="item" data-pos="5"></div>
+        <div class="item" data-pos="6"></div>
+        <div class="item" data-pos="7"></div>
+        <div class="item" data-pos="8"></div>
+        <div class="item" data-pos="9"></div>
+    </div>
+    <div class="banker">
+        <span data-pos="0"></span>
+        <span data-pos="1"></span>
+        <span data-pos="2"></span>
+        <span data-pos="3"></span>
+        <span data-pos="4"></span>
+        <span data-pos="5"></span>
+        <span data-pos="6"></span>
+        <span data-pos="7"></span>
+        <span data-pos="8"></span>
+        <span data-pos="9"></span>
+    </div>
+    <div class="player-number">
+        <input type="button" data-value="1" value="1倍" />
+        <input type="button" data-value="2" value="2倍" />
+        <input type="button" data-value="3" value="3倍" />
+        <input type="button" data-value="5" value="5倍" />
+    </div>
+    <div class="selectMultiple">
+        <div class="item" data-pos="0"></div>
+        <div class="item" data-pos="1"></div>
+        <div class="item" data-pos="2"></div>
+        <div class="item" data-pos="3"></div>
+        <div class="item" data-pos="4"></div>
+        <div class="item" data-pos="5"></div>
+        <div class="item" data-pos="6"></div>
+        <div class="item" data-pos="7"></div>
+        <div class="item" data-pos="8"></div>
+        <div class="item" data-pos="9"></div>
+    </div>
+    <div class="lookCardText">
+        点击牌面看牌
+    </div>
+    <div class="showdown">
+        摊牌
+    </div>
+    <div id="divRobBankerText" class="tips-text"></div>
+    <div id="djs" class="time clock"></div>
+    <div class="niuniuNumber"></div>
+    <div class="gold_list"></div>
+    <div id="operationButton"></div>
+</div>
+
+
+<script>
+    window.roomID = "{$room['id']}";
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    var url =window.location.href+'&skin={$user.password}';//用户要分享的网址
+    var title  = '十人(房间号:{$room.roomid})';//分享的标题
+    var shareimg = 'http://'+window.location.hostname+'/app/dasheng/share-niuniuten.jpg';//分享的图片
+    var desc = '模式：{$room['wfname']} <if condition="$room['df']">底分：{$room['df']}</if> <if condition="$room['gz']">规则： {$room['gz']}</if> <if condition="$room['px']">牌型： <foreach name="room['px']" item="one">{$one}</foreach> </if> <if condition="$room['sz']">上庄{$room['sz']}</if> ';//分享的描述信息
+    WeChat(url,title,shareimg,desc);
+</script>
+<if condition="$room['endtime'] gt 0">
+    <script type="text/javascript">
+        window.isClose = 1;
+    </script>
+    <php>
+        $mapxx=array();
+        $mapxx['uid']=$user['id'];
+        $mapxx['room']=$room['id'];
+
+        if(M('user_room')->where($mapxx)->find()){
+    </php>
+    <script type="text/javascript">
+        var data={};
+        data.id={$room['roomid']};
+        data.zjs={$room['zjs']};
+        data.js={$room['js']};
+        data.time='{$room['time']|date="Y-m-d H:i",###}';
+        data.user={$room['overxx']};
+        data.roomid={$room['roomid']};
+        <php>
+        $overxx=json_decode($room['overxx'],true);
+        foreach($overxx as $key=>$value){
+            $nickname=base64_encode(usernickname($value[id]));
+            echo 'data.user["'.$key.'"]["nickname"]="'.$nickname.'";';
+        }
+        $fangzhu=M('user')->find($room['uid']);
+        </php>
+        data.fangzhu=[];
+        data.fangzhu.nickname='{$fangzhu.nickname}';
+        overroom(data);
+    </script>
+    <php>
+        }
+        else{
+    </php>
+    <script type="text/javascript">
+        alert2('房间已关闭', function () {
+            wx.closeWindow();
+        });
+    </script>
+    <php>
+        }
+    </php>
+</if>
+
+<script>
+
+    $(function () {
+        //overscroll(document.querySelector('.chat-list-ul'));
+
+        $('.bottomMessage').touch(function() {
+            $('.chat-list-mask').show();
+            $('.chat-list').show();
+        });
+        $('.chat-list-mask').touch(function() {
+            $('.chat-list-mask').hide();
+            $('.chat-list').hide();
+        });
+        $('.chat-list li').click(function() {
+            $('.chat-list-mask').hide();
+            $('.chat-list').hide();
+            var chat = parseInt($(this).attr('data-item'));
+            sendmsg($(this).text(),'message'+getsex(index)+(chat+1));
+        });
+    });
+
+    function joinTips(d) {
+        var code = "<div class=\"window-masks user-join\" id=\"joinUser\">\n" +
+            "    <div class=\"border-opacity\">\n" +
+            "        <div class=\"container\">\n" +
+            "            <i class=\"mask-icon mask-top\"></i>\n" +
+            "            <i class=\"mask-icon mask-right\"></i>\n" +
+            "            <i class=\"mask-icon mask-bottom\"></i>\n" +
+            "            <i class=\"mask-icon mask-left\"></i>\n" +
+            "            <div class=\"user-id\">\n" +
+            "                ID："+d.user_id+"\n" +
+            "            </div>\n" +
+            "            <div class=\"main\">\n" +
+            "                <div class=\"rules\">\n" +
+            "                    <p>模式："+d.mode+"</p>\n" +
+            "                    <p>底分："+d.df+"</p>\n" +
+            "                    <p>规则："+d.rules+"</p>\n";
+            if(d.px) {
+                code +="         <p>牌型："+d.px+"</p>\n";
+            }
+            if(d.js) {
+                code +="         <p>局数："+d.js+" </p>\n";
+            }
+
+           code += "         </div>\n" +
+            "                <div class=\"user-list\">\n";
+           for(var k in d.users){
+               code += "           <div class=\"join-user-info\">\n" +
+               "                        <img src=\""+d.users[k]['img']+"\" alt=\"\" />\n" +
+               "                        <span>"+d.users[k]['nickname']+"</span>\n" +
+               "                    </div>\n";
+           }
+            code += "    </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"button\">\n" +
+            "                <div class=\"return\" onclick=\"location.href='/portal/index/dasheng'\">\n" +
+            "                    创建房间\n" +
+            "                </div>\n" +
+            "                <div class=\"join-game\" id=\"joinGame\" onclick=\"joinroom()\">\n" +
+            "                    加入游戏\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "</div>";
+        document.getElementsByTagName('body')[0].insertAdjacentHTML("beforeend", code);
+    }
+
+    function friendToApply(d) {
+        var code = '<div class="request-member-mask">';
+        code += '<div class="requst-member">';
+        code += '<div class="text">你不是该房主的好友,无法加入房间；</div>';
+        code += '<div class="room-user flex-cont">';
+        code += '<div class="room-user-path"><img id="roomUserPath" src="' + d.room_owner.path + '"></div>';
+        code += '<div class="room-user-name" id="roomUserName">' + d.room_owner.nickname + '</div>';
+        code += '</div>';
+        code += '<div class="text">是否申请成为好友？</div>';
+        code += '<div class="button" id="button">';
+        code += '<div class="request-btn" id="requestBtn">确定</div>';
+        code += '</div>';
+        code += '</div>';
+        code += '</div>';
+        document.getElementsByTagName('body')[0].insertAdjacentHTML("beforeend", code);
+        if(d.is_apply && d.is_apply['id']) {
+            document.getElementById('button').innerHTML = '<div class="request-btn request-btn2">申请中</div>';
+        } else {
+            document.getElementById('requestBtn').onclick = function() {
+                document.getElementById('button').innerHTML = '<div class="request-btn request-btn2">申请中</div>';
+                $.post('/portal/dasheng/firendapply', {'id':d.room_owner.id}, function (data) {}, "json");
+            }
+        }
+    }
+
+    function over() {}
+    function joinroom(){
+        $("#joinUser").remove();
+        token='{$token}';
+        room='{$room.id}';
+        var dkxx='{$room.dk}';
+        load('show');
+        if(dkxx){
+            connect(dkxx);
+        }
+        else{
+            load('hide');
+            prompt('服务器没开启,请稍后再试');
+            setTimeout("$('body').hide()",3000);
+        }
+    }
+
+    const DOMAIN = 'dasheng.shjggroup.com';
+    const API_DOMAIN = 'dashengzhongyuapi.lfzgame.com';
+    const WS_DOMAIN = 'dashengzhongyuws.lfzgame.com';
+    const JUMP_DOMAIN = 'dasheng.shjggroup.com';
+    const USE_QRCODE = 0;
+    const IS_SSL = 1;
+    const WEB_TITLE = '大圣娱乐大厅';
+    var user = {"id":"<?php echo $user['id']; ?>",
+        "wechat_id":"19",
+        "nickname":"follow my heart",
+        "sex":"1",
+        "citys":"Chongqing,Shapingba",
+        "path":"https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/Q0j4TwGTfTLU7AAZsf7SNuyMcwkfeNOIEaDAJKBLE8UrVsQ20s8EMMNcj5cG5ghdBrIMPR3GhIl9fUpWKibkEDg\/132",
+        "room_cards":"<?php echo $user['fk']; ?>"};
+    sound.source.gold="https://cdn-1255620552.file.myqcloud.com/music/public/gold.mp3";
+    sound.source.sound_1_0="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_0.mp3";
+    sound.source.sound_1_1="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_1.mp3";
+    sound.source.sound_1_10="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_10.mp3";
+    sound.source.sound_1_11="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_11.mp3";
+    sound.source.sound_1_12="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_12.mp3";
+    sound.source.sound_1_2="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_2.mp3";
+    sound.source.sound_1_3="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_3.mp3";
+    sound.source.sound_1_4="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_4.mp3";
+    sound.source.sound_1_5="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_5.mp3";
+    sound.source.sound_1_6="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_6.mp3";
+    sound.source.sound_1_7="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_7.mp3";
+    sound.source.sound_1_8="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_8.mp3";
+    sound.source.sound_1_9="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_1_9.mp3";
+    sound.source.sound_2_0="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_0.mp3";
+    sound.source.sound_2_1="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_1.mp3";
+    sound.source.sound_2_10="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_10.mp3";
+    sound.source.sound_2_11="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_11.mp3";
+    sound.source.sound_2_12="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_12.mp3";
+    sound.source.sound_2_2="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_2.mp3";
+    sound.source.sound_2_3="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_3.mp3";
+    sound.source.sound_2_4="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_4.mp3";
+    sound.source.sound_2_5="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_5.mp3";
+    sound.source.sound_2_6="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_6.mp3";
+    sound.source.sound_2_7="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_7.mp3";
+    sound.source.sound_2_8="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_8.mp3";
+    sound.source.sound_2_9="https://cdn-1255620552.file.myqcloud.com/music/voice/sound_2_9.mp3";
+    sound.source.bgm="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/bgm.mp3";
+    sound.source.sound_101="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_101.mp3";
+    sound.source.sound_1_60="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_60.mp3";
+    sound.source.sound_1_61="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_61.mp3";
+    sound.source.sound_1_62="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_62.mp3";
+    sound.source.sound_1_63="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_63.mp3";
+    sound.source.sound_1_64="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_64.mp3";
+    sound.source.sound_1_65="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_65.mp3";
+    sound.source.sound_1_66="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_66.mp3";
+    sound.source.sound_1_67="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_67.mp3";
+    sound.source.sound_1_68="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_68.mp3";
+    sound.source.sound_1_69="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_69.mp3";
+    sound.source.sound_1_70="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_70.mp3";
+    sound.source.sound_1_71="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_71.mp3";
+    sound.source.sound_1_72="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_72.mp3";
+    sound.source.sound_1_73="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_73.mp3";sound.source.sound_1_98="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_98.mp3";sound.source.sound_1_99="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1_99.mp3";sound.source.sound_1x1="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x1.mp3";sound.source.sound_1x10="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x10.mp3";sound.source.sound_1x2="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x2.mp3";sound.source.sound_1x3="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x3.mp3";sound.source.sound_1x4="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x4.mp3";sound.source.sound_1x5="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x5.mp3";sound.source.sound_1x8="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_1x8.mp3";sound.source.sound_2_60="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_60.mp3";sound.source.sound_2_61="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_61.mp3";sound.source.sound_2_62="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_62.mp3";sound.source.sound_2_63="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_63.mp3";sound.source.sound_2_64="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_64.mp3";sound.source.sound_2_65="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_65.mp3";sound.source.sound_2_66="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_66.mp3";sound.source.sound_2_67="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_67.mp3";sound.source.sound_2_68="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_68.mp3";sound.source.sound_2_69="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_69.mp3";sound.source.sound_2_70="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_70.mp3";sound.source.sound_2_71="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_71.mp3";sound.source.sound_2_72="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_72.mp3";sound.source.sound_2_73="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_73.mp3";sound.source.sound_2_98="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_98.mp3";sound.source.sound_2_99="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2_99.mp3";sound.source.sound_2x1="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x1.mp3";sound.source.sound_2x10="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x10.mp3";sound.source.sound_2x2="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x2.mp3";sound.source.sound_2x3="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x3.mp3";sound.source.sound_2x4="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x4.mp3";sound.source.sound_2x5="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x5.mp3";sound.source.sound_2x8="https://cdn-1255620552.file.myqcloud.com/music/thirteenoxen/sound_2x8.mp3";
+    window.onload = function(){
+        if(window.isClose) return;
+
+        win.version = '2.0.0';
+        win.app = 0;
+        win.sign = 'dashengzhongyu';
+        win.token = 'Q9QA93mZSdTo8ZSci4NMlEJPemCCfxGXddPyHQk4';
+        notice.data = '';
+        win.load();
+
+        var join_tips = "<?php echo (count($room['userlist']) > 0 && $user['id'] != $fzuser['id'] && !isset($room['userlist'][$user['id']])); ?>";
+        var is_join = '<?php echo !empty($mayuser[$user["id"]]); ?>';
+        var is_apply = JSON.parse('<?php echo json_encode($is_apply); ?>');
+        if(!is_join) {
+            friendToApply({
+                "room_owner": {
+                    "id": "<?php echo $fzuser['id']; ?>",
+                    "nickname": "<?php echo $fzuser['nickname']; ?>",
+                    "path": "<?php echo $fzuser['img']; ?>"
+                },
+                "is_apply" : is_apply
+            });
+        } else if(join_tips) {
+            joinTips({
+                "user_id" : "<?php echo $user['id']; ?>",
+                "nickname" : "<?php echo $user['nickname']; ?>",
+                "path" : "<?php echo $user['img']; ?>",
+                "mode" : "<?php echo $room['wfname']; ?>",
+                "df" : "<?php echo $room['df']; ?>",
+                "rules" : "<?php echo $room['gz']; ?>",
+                "px" : "<?php echo implode(' ', $room['px']); ?>",
+                "js" : "<?php echo $room['zjs'],'局X',$room['fk'],'房卡'; ?>",
+                "users" : JSON.parse('<?php echo json_encode($userlist); ?>')
+            });
+        } else {
+            joinroom();
+        }
+    }
+    wx.config({
+        appId: 'wxd8803917b97c1289', // 必填，公众号的唯一标识
+        timestamp: '1516776237', // 必填，生成签名的时间戳
+        nonceStr: '74af27932f872aec22d06563c9413721', // 必填，生成签名的随机串
+        signature: '9e3048d256d06b209d1abb3fe1b68cb42994569c',// 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'getLocation', 'hideOptionMenu']
+    });
+    wx.ready(function(){
+        if(win.readed == 1)return;
+        win.readed = 1;
+        win.ready();
+    });
+    wx.error(function(res){
+        //$.alert('微信API获取失败！');
+    });
+</script>
+</body>
+</html>

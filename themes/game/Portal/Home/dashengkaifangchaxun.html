@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <title>大圣娱乐大厅</title>
+    <meta name="apple-mobile-web-app-title" content="大圣娱乐大厅" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" type="text/css" href="/app/css/dashengkaifangchaxun.css"/>
+    <script type="text/javascript" src="/app/js/jquery3.2.1.min.js"></script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="/app/js/dashengpk.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        历史战绩
+        <div class="return" onclick="window.location.href='/portal/index/dasheng'"></div>
+    </div>
+    <div class="tab">
+        <div class="tab-item on" data-item="1">
+            我参加的游戏
+        </div>
+        <div class="tab-item" data-item="2">
+            我创建的游戏
+        </div>
+    </div>
+    <div class="pk-list"></div>
+    <div class="pk-list2"></div>
+</div>
+<script type="text/javascript">
+    const DOMAIN = 'dasheng.shjggroup.com';
+    const API_DOMAIN = 'dashengzhongyuapi.lfzgame.com';
+    const WS_DOMAIN = 'dashengzhongyuws.lfzgame.com';
+    const JUMP_DOMAIN = 'dasheng.shjggroup.com';
+    const CDN_DOMAIN = 'https://cdn-1255620552.file.myqcloud.com/';
+    const USE_QRCODE = 0;
+    const IS_SSL = 1;
+    const WEB_TITLE = '大圣娱乐大厅';
+    var user = {
+        "id": "880460",
+        "wechat_id": "19",
+        "nickname": "kx",
+        "sex": "1",
+        "citys": "Chongqing,Shapingba",
+        "path": "https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/Q0j4TwGTfTLU7AAZsf7SNuyMcwkfeNOIEaDAJKBLE8UrVsQ20s8EMMNcj5cG5ghdBrIMPR3GhIl9fUpWKibkEDg\/132",
+        "room_cards": "39"
+    };
+    wx.onload = function() {
+        win.version = '2.0.0';
+        win.app = 0;
+        win.sign = 'dashengzhongyu';
+        win.token = 't5Xt01OOgmGr1hIwJyaEsspsS14YIEzg6gRi9NCo';
+        notice.data = '';
+        win.load();
+        win.ready();
+    };
+    wx.config({
+        appId: 'wxd8803917b97c1289',
+        timestamp: '1517318666',
+        nonceStr: '7e53ec092eadea8fb24d23d96b566e60',
+        signature: '1fd90072656833aa1fadb9c0d65a85885877eb07',
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'getLocation', 'hideOptionMenu']
+    });
+    wx.ready(function() {
+        if (wx.readed && wx.readed == 1) return;
+        wx.readed = 1;
+        if (wx.loaded == 1) wx.onload();
+    });
+    window.onload = function() {
+        wx.onload();
+    }
+</script>
+</body>
+</html>
